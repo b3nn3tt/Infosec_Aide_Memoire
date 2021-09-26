@@ -1,4 +1,4 @@
-# Moving Around the Filesystem
+# Navigating the Linux File System \(LFS\)
 
 The Linux filesystem \(LFS\) is the structure in which all of the information on your computer is stored. In fact, one of the defining properties of the UNIX systems on which Linux is based is that nearly everything you need to identify on your system \(data, commands, symbolic links, devices, and directories\) is represented by items in the filesystems. Knowing where things are, and understanding how to get around the filesystem from the shell, are critical skills in Linux.
 

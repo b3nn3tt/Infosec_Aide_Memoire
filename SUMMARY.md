@@ -29,7 +29,7 @@
       * [Aliases](core-technical-skills/linux/getting-to-know-linux/using-the-shell/aliases.md)
       * [Create your Own Shell Environment](core-technical-skills/linux/getting-to-know-linux/using-the-shell/create-your-own-shell-environment/README.md)
         * [Modification Ideas](core-technical-skills/linux/getting-to-know-linux/using-the-shell/create-your-own-shell-environment/modification-ideas.md)
-    * [Moving Around the Filesystem](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/README.md)
+    * [Navigating the Linux File System \(LFS\)](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/README.md)
       * [Filesystem Commands](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/filesystem-commands.md)
       * [Listing Files and Directories](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/listing-files-and-directories.md)
       * [File Permissions and Ownership](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/file-permissions-and-ownership/README.md)
