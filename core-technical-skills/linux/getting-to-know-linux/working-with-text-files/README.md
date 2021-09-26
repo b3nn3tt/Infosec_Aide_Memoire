@@ -10,5 +10,5 @@ When the UNIX system, on which Linux was based, was created, most information wa
 
 Today, configuration of Linux systems can still be done by editing plain-text files.
 
-Whether you are modifying files in the /etc directory to configure a local service or editing Ansible inventory files to configure sets of host computers, plain-text files are still in common use for those tasks. Before you can become a full-fledged system administrator, you need to be able to use a plain-text editor. The fact that most professional Linux servers don’t even have a graphical interface available makes the need for editing of plain-text configuration files with a non-graphical text editor necessary.
+Whether you are modifying files in the `/etc` directory to configure a local service, or editing [Ansible](https://www.ansible.com/) inventory files to configure sets of host computers, plain-text files are still in common use for those tasks. Before you can become a full-fledged system administrator, you need to be able to use a plain-text editor. The fact that most professional Linux servers don’t even have a graphical interface available makes the need for editing of plain-text configuration files with a non-graphical text editor necessary.
 
