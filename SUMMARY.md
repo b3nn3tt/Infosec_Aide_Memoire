@@ -52,7 +52,9 @@
         * [Adding Text](core-technical-skills/linux/getting-to-know-linux/working-with-text-files/using-vim-and-vi-to-edit-text-files/adding-text.md)
         * [Moving Around in the Text](core-technical-skills/linux/getting-to-know-linux/working-with-text-files/using-vim-and-vi-to-edit-text-files/moving-around-in-the-text.md)
       * [Text Manipulation](core-technical-skills/linux/getting-to-know-linux/working-with-text-files/text-manipulation.md)
-  * [System Administration](core-technical-skills/linux/system-administration.md)
+  * [System Administration](core-technical-skills/linux/system-administration/README.md)
+    * [Installing Linux](core-technical-skills/linux/system-administration/installing-linux.md)
+    * [Managing Running Processes](core-technical-skills/linux/system-administration/managing-running-processes.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
 
