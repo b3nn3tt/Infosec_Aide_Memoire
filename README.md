@@ -12,7 +12,7 @@ An upgrade alters the core functionality or behaviour of our stuff, and everythi
 
 Worse still is when you have to circle back around after **\[INSERT RANDOM AMOUNT OF WEEKS, MONTHS or YEARS HERE\]** to revisit something you haven't worked on in a LOOOOOOOONG time, and you are expected to pick right back up where you left off without a moments preparation. Have you ever found yourself uttering any of the following:
 
-> "_What does that line of code mean \(that I forgot to comment, like an idiot\)_"
+> "_What does that line of code mean... that I forgot to comment... like an idiot_"
 >
 > "_What is that command that I need to run again?_"
 >
