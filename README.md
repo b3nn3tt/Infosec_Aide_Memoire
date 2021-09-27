@@ -46,5 +46,7 @@ I also think that its better to learn how things work from a high-level perspect
 
 So, I work on this Aide Memoire iteratively as I learn more, building up an ever expanding knowledge bank I can refer to when I work. In doing so, I remove my reliance on committing arbitrary commands to memory, and instead write my own guides and explanations for things that I can repeat, ensuring consistency in my work. Not only does this help me to solidify my understanding of the concepts, but I can also follow my own advice when I'm feeling a little absent minded.
 
-I only hope that it useful to you, the reader. Please enjoy my ramblings.
+I only hope that it useful to you, the reader. So, please enjoy my ramblings. 
+
+Let's get started.
 
