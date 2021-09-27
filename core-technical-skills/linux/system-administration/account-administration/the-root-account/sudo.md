@@ -14,6 +14,16 @@ Using `sudoers` for any users or groups on the system, you can do the following:
 If a user leverages `su`, all you know is that someone with the `root` password logged in. Beyond this, oversight of their activities is limited. With the `sudo` command, logs are created to capture which user run an administrative command, providing a more verbose account of privileged user actions
 {% endhint %}
 
+With the `sudoers` facility, giving full or limited root privileges to any user simply entails adding the user to the `/etc/sudoers` file, and defining what privilege you want that user to have. Then, the user can run any command they have been granted privileges for by preceding said command with `sudo` .
+
+For example, here we see a standard user trying to view the contents of the `/etc/shadow` file, and then again via `sudo`:
+
+![Privileged Vs Un-Privileged execution](../../../../../.gitbook/assets/image%20%2839%29.png)
+
+
+
+
+
 
 
 
