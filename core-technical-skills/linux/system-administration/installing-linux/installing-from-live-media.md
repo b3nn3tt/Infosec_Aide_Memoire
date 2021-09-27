@@ -43,7 +43,7 @@ _**Because the Fedora 30 installation is very similar to the Red Hat Enterprise 
    When the Welcome to Fedora screen appears, position your mouse over the Install to Hard Drive area and select it:  
 
 
-   ![](../../../../.gitbook/assets/image%20%2844%29.png)
+   ![](../../../../.gitbook/assets/image%20%2845%29.png)
 
   
 
@@ -51,7 +51,7 @@ _**Because the Fedora 30 installation is very similar to the Red Hat Enterprise 
    When prompted, choose the language type that best suits you and select Next. You should then see the Installation summary screen:  
 
 
-   ![](../../../../.gitbook/assets/image%20%2849%29.png)
+   ![](../../../../.gitbook/assets/image%20%2850%29.png)
 
 5. **Select Time & Date** From the Time & Date screen, you can select your time zone either by clicking the map, or choosing the region and city from drop-down boxes. To set the date and time, if you have an Internet connection, you can select the `Network Time` button to turn it on, or you can select `OFF` and set the date and time manually from boxes on the bottom of the screen. Select Done in the upper-right corner when you are finished 
 6. **Select the installation destination** Available storage devices \(such as your hard drive\) are displayed, with your hard drive selected as the installation destination. If you want the installer to install Fedora automatically, reclaiming existing diskspace, make sure that your disk is selected \(not a USB drive or other device connected to your computer\), then make the following selections: 

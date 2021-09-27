@@ -6,7 +6,7 @@ I have been working in Information Security \(or Cyber security if you are so in
 
 We've all been there - worked for weeks, months, perhaps even years, to master our craft, be that as a network engineer, web application developer, system administrator, or any other discipline of Information Technology, and just as we get to the stage where we think we've got everything worked out, we're finally feeling like you know what we're doing...
 
-![](.gitbook/assets/image%20%2848%29.png)
+![](.gitbook/assets/image%20%2849%29.png)
 
 An upgrade alters the core functionality or behaviour of our stuff, and everything we've worked on is now broken, or the technology stack changes and it's all unfamiliar. Perhaps a sudden move into a different area of the business requires us to learn something entirely new, and the whole process begins again from scratch - I mean, "_you're an IT guy, its all the same right?_"...
 
