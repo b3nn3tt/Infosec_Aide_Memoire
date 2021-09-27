@@ -1,8 +1,8 @@
 # htop
 
-An evolution over standard `top`, [htop](https://htop.dev/) provides an interactive, full terminal view process management environment. `htop` isn't always installed by default, however most distributions include it as an installable option their package manager repositories - _more on those later_.
+An evolution over standard `top`, [htop](https://htop.dev/) provides an interactive, full terminal view process management environment. `htop` isn't always installed by default, however most distributions include it as an installable option their package manager repositories - _more on those later_. At the time of writing this section, `htop` had been adopted as part of the default installation for Ubuntu Server.
 
-Running htop is simple:
+Running and interacting with `htop` is very simple:
 
 ```text
 htop
