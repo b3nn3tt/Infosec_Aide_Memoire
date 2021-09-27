@@ -7,7 +7,7 @@ description: It's time to learn to administer all the things.
 In this section, we will explore:
 
 * Installing Linux
-* Using the root login
+* Using the root login, and User Administration
 * Understanding administrative commands, config files, and log files
 * Graphical administration
 * Working with devices and filesystems
