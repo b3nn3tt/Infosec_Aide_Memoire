@@ -61,6 +61,7 @@
     * [Account Administration](core-technical-skills/linux/system-administration/account-administration/README.md)
       * [The root Account](core-technical-skills/linux/system-administration/account-administration/the-root-account/README.md)
         * [Becoming root with su](core-technical-skills/linux/system-administration/account-administration/the-root-account/becoming-root-with-su.md)
+        * [sudo](core-technical-skills/linux/system-administration/account-administration/the-root-account/sudo.md)
     * [Managing Running Processes](core-technical-skills/linux/system-administration/managing-running-processes.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
