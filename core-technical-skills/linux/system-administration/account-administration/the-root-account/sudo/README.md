@@ -18,5 +18,5 @@ With the `sudoers` facility, giving full or limited root privileges to any user 
 
 For example, here we see a standard user trying to view the contents of the `/etc/shadow` file, and then again via `sudo`:
 
-![Privileged Vs Un-Privileged execution](../../../../../../.gitbook/assets/image%20%2842%29.png)
+![Privileged Vs Un-Privileged execution](../../../../../../.gitbook/assets/image%20%2844%29.png)
 

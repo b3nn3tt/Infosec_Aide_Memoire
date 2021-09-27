@@ -82,6 +82,9 @@
         * [Installation and Configuration](core-technical-skills/linux/system-administration/graphical-remote-administration/remote-desktop-with-vnc/installation-and-configuration.md)
         * [Running VNC as a System Service](core-technical-skills/linux/system-administration/graphical-remote-administration/remote-desktop-with-vnc/running-vnc-as-a-system-service.md)
     * [Managing Running Processes](core-technical-skills/linux/system-administration/managing-running-processes.md)
+    * [Listing Processes](core-technical-skills/linux/system-administration/listing-processes/README.md)
+      * [ps](core-technical-skills/linux/system-administration/listing-processes/ps.md)
+      * [top](core-technical-skills/linux/system-administration/listing-processes/top.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
 

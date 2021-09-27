@@ -6,11 +6,11 @@ One solution is to use the `su` command. `su` stands for Substitute User, and it
 
 If you try to use `su` on a system where a password has not been set for root \(typical in default Ubuntu installs\), you will notice that you receive an authentication error:
 
-![Ubuntu default installation, where root has no password set](../../../../../.gitbook/assets/image%20%2844%29.png)
+![Ubuntu default installation, where root has no password set](../../../../../.gitbook/assets/image%20%2847%29.png)
 
 You can overcome this by using the `sudo` command, assuming that the user you are logged in with is a member of the `sudo` group. We will look at `sudo` more in depth later, but at this point all you need to recognise is that as a member of the `sudo` group, any commands you execute leveraging `sudo` will be executed with `root` privileges. Therefore, to authenticate as root, a `sudo` user can preface `su` with `sudo`, and when authenticating with their own password, the user will then become `root`:
 
-![A user, as a member of the sudo group, is able to switch to the root account via sudo su](../../../../../.gitbook/assets/image%20%2843%29.png)
+![A user, as a member of the sudo group, is able to switch to the root account via sudo su](../../../../../.gitbook/assets/image%20%2846%29.png)
 
 Using this type of configuration adds security to the use of the `root` account, and is considered best practice.
 
@@ -22,7 +22,7 @@ su
 
 When prompted, simply type the root user’s password. The prompt for the regular user \(`$`\) changes to the superuser prompt \(`#`\):
 
-![Using su to become root](../../../../../.gitbook/assets/image%20%2840%29.png)
+![Using su to become root](../../../../../.gitbook/assets/image%20%2842%29.png)
 
 At this point, you have full permission to run any command and use any file on the system.
 
