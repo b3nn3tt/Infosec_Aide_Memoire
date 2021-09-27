@@ -20,9 +20,9 @@ For example, here we see a standard user trying to view the contents of the `/et
 
 ![Privileged Vs Un-Privileged execution](../../../../../.gitbook/assets/image%20%2839%29.png)
 
+### The /etc/sudoers File
 
-
-
+If you look at the default `sudoers` file in Ubuntu, you see that the initial user on the system already has privilege, by default, for the `sudo` group members. To give any other user the same privilege, you simply add the additional user to the admin group when you run visudo.
 
 
 
