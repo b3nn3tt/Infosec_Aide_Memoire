@@ -38,7 +38,7 @@ In the screenshot, we see the `admin` group can execute any command as any user 
 
 The last line might look like a comment at first glance:
 
-![Excerpt from the /etc/sudoers file regarding includes](../../../../../../.gitbook/assets/image%20%2847%29.png)
+![Excerpt from the /etc/sudoers file regarding includes](../../../../../../.gitbook/assets/image%20%2848%29.png)
 
 However, this line actually indicates that files within the `/etc/sudoers.d` directory will be sourced and applied as well.
 

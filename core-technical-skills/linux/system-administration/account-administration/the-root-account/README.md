@@ -22,7 +22,7 @@ Here’s what the root entry looks like in the `/etc/passwd` file:
 cat /etc/passwd | grep root
 ```
 
-![The entry for the root account in /etc/passwd](../../../../../.gitbook/assets/image%20%2853%29.png)
+![The entry for the root account in /etc/passwd](../../../../../.gitbook/assets/image%20%2854%29.png)
 
 This shows that for the user named `root`, the user ID is set to `0` \(root user\), the group ID is set to `0` \(root group\), the home directory is `/root`, and the shell for that user is `/bin/bash`.
 

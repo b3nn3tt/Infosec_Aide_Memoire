@@ -124,17 +124,30 @@ With the configuration in place, you’re ready to connect to the VNC server fro
 
 ## Connecting to the VNC Desktop Securely
 
-VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, you’ll establish an SSH tunnel and then tell your VNC client to connect using that tunnel rather than making a direct connection.
+VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, we will establish an SSH tunnel, and then tell our VNC client to connect using that tunnel rather than making a direct connection. In this way, we achieve a secure connection.
 
+To achieve this, create an SSH connection on your local computer that securely forwards to the `localhost` connection for VNC. We can do this via the terminal on Linux \(or macOS, and even Windows these days\) with the following `ssh` command:
 
+```text
+ssh -L 59000:localhost:5901 -C -N -l USERNAME VNC_SERVER_IP
+```
 
+Here’s what this `ssh` command’s options mean:
 
+* `-L 59000:localhost:5901`: The `-L` switch specifies that the specified port on our local computer, **`TCP 59000`** is to be forwarded to the given host and port on the destination server **`localhost:5901`** meaning port **`TCP 5901`** on the destination server, defined as `VNC_SERVER_IP`. Note that the local port you specify is somewhat arbitrary; as long as the port isn’t already bound to another service, you can use it as the forwarding port for your tunnel 
+* `-C`: This flag enables compression which can help minimize resource consumption and speed things up 
+* `-N`: This option tells `ssh` that you don’t want to execute any remote commands. This setting is useful when you just want to forward ports 
+* `-l USERNAME VNC_SERVER_IP`: The `-l` switch let’s you specify the user you want to log in as once you connect to the server. Make sure to replace `USERNAME` and `VNC_SERVER_IP` with the name of your **non-root user** and your server’s IP address
 
+{% hint style="info" %}
+This command establishes an SSH tunnel that forwards information from port `5901` on your VNC server to port `59000` on your local machine via port `22` on each machine, the default port for SSH.
 
+This is more secure than simply opening up your server’s firewall to allow connections to port `5901`, as that would allow anyone to access your server over VNC. By connecting over an SSH tunnel, you’re limiting VNC access to machines that already have SSH access to the server.
+{% endhint %}
 
+Once the tunnel is running, use a VNC client to connect to `localhost:59000`. You’ll be prompted to authenticate using the password you set earlier. Once you are connected, you’ll see the default xfce desktop. It should look something like this:
 
+![](../../../../../.gitbook/assets/image%20%2841%29.png)
 
-
-
-
+When you are finished, press `Ctrl` + `c` in your local terminal to stop the SSH tunnel and return to your prompt. This will disconnect your VNC session as well.
 
