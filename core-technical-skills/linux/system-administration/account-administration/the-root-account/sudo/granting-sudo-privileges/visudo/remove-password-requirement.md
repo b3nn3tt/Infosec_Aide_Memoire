@@ -6,3 +6,5 @@ Find the line belonging to the user or group you wish to remove the password req
 USER    ALL=(ALL:ALL) NOPASSWD:ALL
 ```
 
+ `NOPASSWD` is a “tag” that means no password will be requested.
+
