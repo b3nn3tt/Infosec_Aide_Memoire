@@ -56,6 +56,8 @@
     * [Installing Linux](core-technical-skills/linux/system-administration/installing-linux/README.md)
       * [Installing from Live Media](core-technical-skills/linux/system-administration/installing-linux/installing-from-live-media.md)
       * [Installing in the Enterprise](core-technical-skills/linux/system-administration/installing-linux/installing-in-the-enterprise.md)
+      * [Partitioning Hard Disks](core-technical-skills/linux/system-administration/installing-linux/partitioning-hard-disks/README.md)
+        * [Tips for Creating Partitions](core-technical-skills/linux/system-administration/installing-linux/partitioning-hard-disks/tips-for-creating-partitions.md)
     * [Managing Running Processes](core-technical-skills/linux/system-administration/managing-running-processes.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
