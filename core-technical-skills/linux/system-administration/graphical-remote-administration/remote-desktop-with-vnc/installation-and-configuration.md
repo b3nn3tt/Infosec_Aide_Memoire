@@ -95,6 +95,37 @@ startxfce4 &
 ```
 {% endcode %}
 
+Save and close the file after adding these lines. If you used `nano`, do so by pressing `CTRL` + `X`, `Y`, then `ENTER`.
+
+{% hint style="info" %}
+The first command in the file, `xrdb $HOME/.Xresources`, tells VNC’s GUI framework to read the server user’s `.Xresources` file. `.Xresources` is where a user can make changes to certain settings of the graphical desktop, like terminal colours, cursor themes, and font rendering.
+
+The second command tells the server to launch Xfce. 
+
+Whenever you start or restart the VNC server, these commands will execute automatically
+{% endhint %}
+
+To ensure that the VNC server will be able to use this new start-up file properly, you’ll need to make it executable, and then restart the VNC server:
+
+```text
+chmod +x ~/.vnc/xstartup
+vncserver -localhost
+```
+
+{% hint style="info" %}
+Notice that this time the command includes the `-localhost` option, which binds the VNC server to your server’s loopback interface. This will cause VNC to only allow connections that originate from the server on which it’s installed. 
+
+This is because in the next step we will establish an SSH tunnel between our local machine and the server, essentially tricking VNC into thinking that the connection from our local machine originated on the server. This strategy will add an extra layer of security around VNC, as the only users who will be able to access it are those that already have SSH access to your server.
+{% endhint %}
+
+With the configuration in place, you’re ready to connect to the VNC server from your local machine.
+
+
+
+## Connecting to the VNC Desktop Securely
+
+VNC itself doesn’t use secure protocols when connecting. To securely connect to your server, you’ll establish an SSH tunnel and then tell your VNC client to connect using that tunnel rather than making a direct connection.
+
 
 
 

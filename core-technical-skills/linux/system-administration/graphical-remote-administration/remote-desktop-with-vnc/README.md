@@ -15,7 +15,3 @@ To establish remote access, you can use any of the following client applications
 | [Vinagre](https://www.linuxlinks.com/vinagre/) | N | Y | N |
 | [krdc](https://apps.kde.org/en-gb/krdc/) | N | Y | N |
 
-
-
-
-
