@@ -74,6 +74,8 @@
       * [Other Administrative Accounts](core-technical-skills/linux/system-administration/account-administration/other-administrative-accounts.md)
       * [Standard User Accounts](core-technical-skills/linux/system-administration/account-administration/standard-user-accounts.md)
     * [Graphical Remote Administration](core-technical-skills/linux/system-administration/graphical-remote-administration/README.md)
+      * [Remote Desktop Protocol with xrdp](core-technical-skills/linux/system-administration/graphical-remote-administration/remote-desktop-protocol-with-xrdp/README.md)
+        * [Installation and Configuration](core-technical-skills/linux/system-administration/graphical-remote-administration/remote-desktop-protocol-with-xrdp/installation-and-configuration.md)
       * [Cockpit](core-technical-skills/linux/system-administration/graphical-remote-administration/cockpit/README.md)
         * [Installation Guide](core-technical-skills/linux/system-administration/graphical-remote-administration/cockpit/installation-guide.md)
     * [Managing Running Processes](core-technical-skills/linux/system-administration/managing-running-processes.md)
