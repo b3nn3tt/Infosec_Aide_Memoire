@@ -1,5 +1,7 @@
 # Remote Desktop Protocol with xrdp
 
+Cockpit is the gold standard of Graphical Remote Administration tools as it presents a user friendly interface for systems that aren't necessarily running a full desktop environment. However, if your remote target is running a GUI, then you have another option in `xrdp`.
+
 `xrdp` provides a graphical login to remote machines using RDP,  Microsoft's Remote Desktop Protocol. `xrdp` accepts connections from variety of RDP clients such as: 
 
 * [FreeRDP](https://www.freerdp.com/) 
