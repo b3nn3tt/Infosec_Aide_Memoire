@@ -1,7 +1,3 @@
----
-description: A place for all things Linux
----
-
 # Linux
 
 ![](../../.gitbook/assets/image%20%2820%29.png)
