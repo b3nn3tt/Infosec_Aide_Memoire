@@ -8,7 +8,7 @@ The most common utility for checking running processes is the `ps` command. Use 
 ps u
 ```
 
-![](../../../../.gitbook/assets/image%20%2849%29.png)
+![](../../../../.gitbook/assets/image%20%2851%29.png)
 
 In this example, the u option \(equivalent to -u\) asks that usernames be shown, as well as other information such as:
 
@@ -42,7 +42,7 @@ Several other values can appear under the STAT column. For example, a plus sign 
 The VSZ and RSS sizes may be different because VSZ is the amount of memory allocated for the process, whereas RSS is the amount that is actually being used. RSS memory represents physical memory that cannot be swapped
 {% endhint %}
 
- Many processes running on a computer are not associated with a terminal. A normal Linux system has many processes running in the background. Background system processes perform such tasks as logging system activity or listening for data coming in from the network. They are often started when Linux boots up and run continuously until the system shuts down.
+Many processes running on a computer are not associated with a terminal. A normal Linux system has many processes running in the background. Background system processes perform such tasks as logging system activity or listening for data coming in from the network. They are often started when Linux boots up and run continuously until the system shuts down.
 
 Likewise, logging into a Linux desktop causes many background processes to kick off, such as processes for managing audio, desktop panels, authentication, and other desktop features. To page through **all of the processes running on your Linux system for the current user**, enter the following command:
 
@@ -50,7 +50,7 @@ Likewise, logging into a Linux desktop causes many background processes to kick 
 ps ux
 ```
 
-![A list of ALL processes running for the current user](../../../../.gitbook/assets/image%20%2839%29.png)
+![A list of ALL processes running for the current user](../../../../.gitbook/assets/image%20%2841%29.png)
 
  To page through **all processes running for ALL users on your system**, use the `ps aux` command as follows:
 
@@ -58,7 +58,7 @@ ps ux
 ps aux
 ```
 
-![A list of ALL processes running for ALL users](../../../../.gitbook/assets/image%20%2856%29.png)
+![A list of ALL processes running for ALL users](../../../../.gitbook/assets/image%20%2858%29.png)
 
 The ps command can be customized to display selected columns of information, and to sort information by one of those columns. Using the `-o` option, you can use keywords to indicate the columns you want to list with ps. For instance, the next example lists every running process \(`-e`\) and then follows the `-o` option with every column of information I want to display:
 
@@ -66,7 +66,7 @@ The ps command can be customized to display selected columns of information, and
 ps -eo pid,user,uid,group,gid,vsz,rss,comm
 ```
 
-![Specified desired output, sorted by PID](../../../../.gitbook/assets/image%20%2840%29.png)
+![Specified desired output, sorted by PID](../../../../.gitbook/assets/image%20%2842%29.png)
 
 {% hint style="info" %}
 By default, output is sorted by process ID number
@@ -78,7 +78,7 @@ If you want to sort by a specific column, you can use the `sort=` option. For ex
 ps -eo pid,user,group,gid,vsz,rss,comm --sort=vsz
 ```
 
-![Specified desired output, sorted by VSZ to determine most memory hungry process \(Lower first\)](../../../../.gitbook/assets/image%20%2845%29.png)
+![Specified desired output, sorted by VSZ to determine most memory hungry process \(Lower first\)](../../../../.gitbook/assets/image%20%2847%29.png)
 
 The previous command sorts from **lowest memory use to highest**. If I wanted to see the highest consumers first, I could put a hyphen in front of that option to sort:
 
@@ -86,5 +86,5 @@ The previous command sorts from **lowest memory use to highest**. If I wanted to
 ps -eo pid,user,group,gid,vsz,rss,comm --sort=-vsz
 ```
 
-![Specified desired output, sorted by VSZ to determine most memory hungry process \(Highest first\)](../../../../.gitbook/assets/image%20%2848%29.png)
+![Specified desired output, sorted by VSZ to determine most memory hungry process \(Highest first\)](../../../../.gitbook/assets/image%20%2850%29.png)
 

@@ -85,6 +85,7 @@
     * [Listing Processes](core-technical-skills/linux/system-administration/listing-processes/README.md)
       * [ps](core-technical-skills/linux/system-administration/listing-processes/ps.md)
       * [top](core-technical-skills/linux/system-administration/listing-processes/top.md)
+      * [htop](core-technical-skills/linux/system-administration/listing-processes/htop.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
 

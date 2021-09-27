@@ -147,7 +147,7 @@ This is more secure than simply opening up your server’s firewall to allow con
 
 Once the tunnel is running, use a VNC client to connect to `localhost:59000`. You’ll be prompted to authenticate using the password you set earlier. Once you are connected, you’ll see the default xfce desktop. It should look something like this:
 
-![](../../../../../.gitbook/assets/image%20%2843%29.png)
+![](../../../../../.gitbook/assets/image%20%2845%29.png)
 
 When you are finished, press `Ctrl` + `c` in your local terminal to stop the SSH tunnel and return to your prompt. This will disconnect your VNC session as well.
 
