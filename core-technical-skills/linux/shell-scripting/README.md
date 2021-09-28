@@ -1,8 +1,8 @@
 # Shell Scripting
 
-Lots of people are put off at the idea of scripting or programming as it can look quite complicated, and yes, some scripts can be really unwieldy at first glance \(this can be for many reasons, not least of which is poor commenting by the author\). But when you boil things down to basics, scripts are really simple things. Try to think of script like a recipe - you put in the ingredients, and after a few practice runs trying to not burn the house down, you have a delicious meal to show for all your efforts. All a script really is, is a list of commands performed one after the other. You can leverage pretty much any commands you like, and by learning a few key functions you will find in this section, you can add some quite powerful logic to your script. 
+Lots of people are put off at the idea of scripting or programming as it can look quite complicated, and yes, some scripts appear rather unwieldy at first glance \(this can be for many reasons, not least of which is poor commenting by the author\). But when you boil things down to basics, scripts are really simple things.
 
-Before you know it, you will automating things without consciously thinking about it.
+Try to think of script like a recipe - you put in the ingredients, and after a few practice runs trying to not burn the house down, you have a delicious meal to show for all your efforts. All a script really is, is a list of commands performed one after the other. You can leverage pretty much any commands you like, and by learning a few key functions you will find in this section, you can add some quite powerful logic to your script - before you know it, you will automating things without consciously thinking about it.
 
 When you try to execute a shell script in Linux, the terminal you are running in \(and therefore, the shell itself\) will try to execute it natively by default. However, as part of that execution, the script will look for the presence of what is known as a **defined required interpreter**. This is set on the first line of the script using what is known as the **shebang** \(haSH BANG\), depicted as follows:
 
