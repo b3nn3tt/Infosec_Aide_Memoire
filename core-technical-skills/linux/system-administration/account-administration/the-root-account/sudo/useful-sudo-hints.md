@@ -50,7 +50,7 @@ Defaults   insults
 
 This will cause `sudo` to return an insult when a user types in an incorrect password. See the following example:
 
-![](../../../../../../.gitbook/assets/image%20%2854%29.png)
+![](../../../../../../.gitbook/assets/image%20%2857%29.png)
 
 
 

@@ -8,7 +8,7 @@ Running and interacting with `htop` is very simple:
 htop
 ```
 
-![A running instance of htop](../../../../.gitbook/assets/image%20%2837%29.png)
+![A running instance of htop](../../../../../.gitbook/assets/image%20%2838%29.png)
 
 `htop` has many additional options, and unlike top where those options are not apparent and require prior knowledge of shortcuts, `htop` trivialises the process through the use of function keys. They keys are fairly self explanatory, so take a quick look at the screenshot above to gain a quick familiarisation.
 

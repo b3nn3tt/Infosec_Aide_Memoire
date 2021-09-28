@@ -8,7 +8,7 @@ vi /tmp/test
 
 If this is a new file, you should see something similar to the following:
 
-![Opening /tmp/test in vi](../../../../../.gitbook/assets/image%20%2861%29.png)
+![Opening /tmp/test in vi](../../../../../.gitbook/assets/image%20%2866%29.png)
 
 A blinking box at the top represents where your cursor is located. The bottom line keeps you informed about what is going on with your editing \(here, you just opened a new file\). In between, there are funny looking characters known as tildes \(`~`\) - they act as filler because there is no text in the file yet.
 

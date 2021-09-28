@@ -6,7 +6,7 @@ The easiest thing to do is to look at the `/etc/sudoers` file to see what is hap
 sudo nano /etc/sudoers
 ```
 
-![A default /etc/sudoers file in Ubuntu](../../../../../../.gitbook/assets/image%20%2843%29.png)
+![A default /etc/sudoers file in Ubuntu](../../../../../../.gitbook/assets/image%20%2845%29.png)
 
 Let's take a look at the various sections in closer details...
 
@@ -38,7 +38,7 @@ In the screenshot, we see the `admin` group can execute any command as any user 
 
 The last line might look like a comment at first glance:
 
-![Excerpt from the /etc/sudoers file regarding includes](../../../../../../.gitbook/assets/image%20%2855%29.png)
+![Excerpt from the /etc/sudoers file regarding includes](../../../../../../.gitbook/assets/image%20%2858%29.png)
 
 However, this line actually indicates that files within the `/etc/sudoers.d` directory will be sourced and applied as well.
 

@@ -12,7 +12,7 @@ If you want to be able to kill or renice any processes, you need to run `top` as
 top
 ```
 
-![An example of running top](../../../../.gitbook/assets/image%20%2835%29.png)
+![An example of running top](../../../../../.gitbook/assets/image%20%2835%29.png)
 
 General information about your system appears at the top of the output, followed by information about each running process \(or at least as many as will fit on your screen\). At the top, you can see how long the system has been up, how many users are currently logged in to the system, and how much demand there has been on the system for the past 1, 5,and 10 minutes. Other general information includes how many processes \(tasks\) are currently running, how much CPU is being used, and how much RAM and swap are available and being used.
 

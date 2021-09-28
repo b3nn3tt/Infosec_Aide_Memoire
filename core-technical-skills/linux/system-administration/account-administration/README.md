@@ -12,7 +12,7 @@ The `/etc/passwd` file stores essential information, which required during login
 
 The `/etc/passwd` contains one entry per line for each account present on the system. All fields are separated by a colon \(`:`\) symbol. Total of seven fields as follows. Generally, file entries look as follows:
 
-![Example /etc/passwd entry](../../../../.gitbook/assets/image%20%2839%29.png)
+![Example /etc/passwd entry](../../../../.gitbook/assets/image%20%2840%29.png)
 
 1. **Username**: It is used when user logs in. It should be between 1 and 32 characters in length 
 2. **Password**: An `x` character indicates that encrypted password is stored in `/etc/shadow` file. Please note that you need to use the `passwd` command to change an account passed to ensure that the password typed at the CLI is hashed correctly. _We will revisit this mechanism later_. 
