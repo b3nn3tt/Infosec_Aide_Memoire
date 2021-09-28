@@ -144,7 +144,8 @@
 ## Penetration Testing - Containers
 
 * [Docker](penetration-testing-containers/docker/README.md)
-  * [Docker Registry](penetration-testing-containers/docker/docker-registry.md)
+  * [Docker Registry](penetration-testing-containers/docker/docker-registry/README.md)
+    * [Enumeration of a Docker Registry](penetration-testing-containers/docker/docker-registry/enumeration-of-a-docker-registry.md)
   * [Docker Engine](penetration-testing-containers/docker/docker-engine.md)
   * [Container Escapes](penetration-testing-containers/docker/container-escapes.md)
 
