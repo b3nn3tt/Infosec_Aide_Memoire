@@ -89,7 +89,8 @@
       * [Backgrounding and Foregrounding](core-technical-skills/linux/system-administration/managing-running-processes/backgrounding-and-foregrounding/README.md)
         * [Starting a Background Process](core-technical-skills/linux/system-administration/managing-running-processes/backgrounding-and-foregrounding/starting-a-background-process.md)
         * [Using Foreground and Background Commands](core-technical-skills/linux/system-administration/managing-running-processes/backgrounding-and-foregrounding/using-foreground-and-background-commands.md)
-      * [Killing and Recining Processes](core-technical-skills/linux/system-administration/managing-running-processes/killing-and-recining-processes.md)
+      * [Killing and Recining Processes](core-technical-skills/linux/system-administration/managing-running-processes/killing-and-recining-processes/README.md)
+        * [kill and killall](core-technical-skills/linux/system-administration/managing-running-processes/killing-and-recining-processes/kill-and-killall.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
 
