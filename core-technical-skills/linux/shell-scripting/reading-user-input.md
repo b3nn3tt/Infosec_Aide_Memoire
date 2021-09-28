@@ -29,5 +29,5 @@ echo "Hello $username, your password is now set to $password"
 ```
 {% endcode %}
 
-![Example of a script using -p and -sp with read](../../../.gitbook/assets/image%20%2872%29.png)
+![Example of a script using -p and -sp with read](../../../.gitbook/assets/image%20%2873%29.png)
 

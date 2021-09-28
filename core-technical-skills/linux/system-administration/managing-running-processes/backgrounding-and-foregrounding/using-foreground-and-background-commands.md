@@ -46,7 +46,7 @@ sudo tcpdump -i eth0 -ntvxw example.pcap
 
 Now, we can see by running jobs that the task has been stopped:
 
-![Confirmation that the running process has stopped](../../../../../.gitbook/assets/image%20%2873%29.png)
+![Confirmation that the running process has stopped](../../../../../.gitbook/assets/image%20%2876%29.png)
 
 Now, by entering `bg 1`, we can allow the process to continue in the background:
 
