@@ -1,6 +1,6 @@
 # Docker
 
-So, what IS Docker?
+So, what IS [Docker](https://www.docker.com/)?
 
 Starting in 2013, Docker was introduced to solve the costly and time-consuming process of application development and service delivery. Docker employs what is currently a "hot potato" topic for developers; **containerisation**. This technology separates applications into their own bespoke environment, or “container”, where they share the resources of, but interact with, the host operating system independently of each other.
 
@@ -17,13 +17,13 @@ Containers share computing resources with, but remain isolated enough to not con
 
 Let's look at the diagram below for a better picture:
 
-![A high-level concept of Docker](../../.gitbook/assets/image%20%2881%29.png)
+![A high-level concept of Docker](../../.gitbook/assets/image%20%2882%29.png)
 
 We can see three containers running their own applications with no virtualisation. The three applications are isolated from one another, but use the main operating system's resources.
 
 In comparison, running these applications in virtual machines:
 
-![A high-level concept of Virtualisation](../../.gitbook/assets/image%20%2873%29.png)
+![A high-level concept of Virtualisation](../../.gitbook/assets/image%20%2874%29.png)
 
  The "_Guest Operating System_" is where the resources are used up.
 
