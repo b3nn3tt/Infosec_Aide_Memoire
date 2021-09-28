@@ -98,8 +98,11 @@
     * [Reading User Input](core-technical-skills/linux/shell-scripting/reading-user-input.md)
     * [if, else, and elif](core-technical-skills/linux/shell-scripting/if-else-and-elif.md)
     * [BOOLEAN Logic](core-technical-skills/linux/shell-scripting/boolean-logic.md)
-    * [Loops](core-technical-skills/linux/shell-scripting/loops.md)
+    * [Loops](core-technical-skills/linux/shell-scripting/loops/README.md)
+      * [for Loops](core-technical-skills/linux/shell-scripting/loops/for-loops.md)
+      * [while Loops](core-technical-skills/linux/shell-scripting/loops/while-loops.md)
     * [Functions](core-technical-skills/linux/shell-scripting/functions.md)
+    * [Local Vs Global Variables](core-technical-skills/linux/shell-scripting/local-vs-global-variables.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
 * [Windows](core-technical-skills/windows.md)
 
