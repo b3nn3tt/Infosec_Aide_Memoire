@@ -8,7 +8,7 @@ As with any system that we are going to be penetration testing, we need to enume
 nmap -sV -p- [TARGET-IP]
 ```
 
-![nmap scan results, showing a Docker registry running on default TCP 5000, and another on TCP 7000](../../../.gitbook/assets/image%20%2875%29.png)
+![nmap scan results, showing a Docker registry running on default TCP 5000, and another on TCP 7000](../../../.gitbook/assets/image%20%2882%29.png)
 
 {% hint style="info" %}
 Not only is nmap capable of discovering the Docker Registry, but also the API version - this is important to note for how we will interact with it
@@ -26,7 +26,7 @@ We will be using the target [http://docker-rodeo.thm](http://docker-rodeo.thm) f
 
 We need to send a `GET` request to `http://docker-rodeo.thm:5000/v2/_catalog` to list all the repositories registered on the registry:
 
-![A crafted GET request to the target Docker Registry](../../../.gitbook/assets/image%20%2880%29.png)
+![A crafted GET request to the target Docker Registry](../../../.gitbook/assets/image%20%2888%29.png)
 
  As you can see, we're given a response of three repositories. For now, we are only going to focus on `cmnatic/myapp1`.
 
@@ -61,7 +61,7 @@ We are going to grab the manifest file for the "**notsecure**" tag via the follo
 http://docker-rodeo.thm:5000/v2/cmnatic/myapp1/manifests/notsecure
 ```
 
-![Grabbing the manifest file](../../../.gitbook/assets/image%20%2879%29.png)
+![Grabbing the manifest file](../../../.gitbook/assets/image%20%2886%29.png)
 
 Note the response - specifically the "history" key \(as shown\); albeit slightly hard to read, we have a command that was executed during the image building stage stored in plaintext;  
   

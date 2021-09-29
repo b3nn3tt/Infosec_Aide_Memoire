@@ -146,6 +146,10 @@
 * [Docker](penetration-testing-containers/docker/README.md)
   * [Docker Registry](penetration-testing-containers/docker/docker-registry/README.md)
     * [Enumeration of a Docker Registry](penetration-testing-containers/docker/docker-registry/enumeration-of-a-docker-registry.md)
+    * [Exploiting a Docker Registry](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/README.md)
+      * [Upload a Malicious Docker Image](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/upload-a-malicious-docker-image.md)
+      * [Reverse Engineering Docker Images](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/reverse-engineering-docker-images/README.md)
+        * [Image Analysis with dive](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/reverse-engineering-docker-images/image-analysis-with-dive.md)
   * [Docker Engine](penetration-testing-containers/docker/docker-engine.md)
   * [Container Escapes](penetration-testing-containers/docker/container-escapes.md)
 
