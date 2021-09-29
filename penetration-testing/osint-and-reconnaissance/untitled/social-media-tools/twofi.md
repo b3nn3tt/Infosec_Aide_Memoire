@@ -43,6 +43,10 @@ chmod a+x twofi.rb
 ./twofi.rb
 ```
 
+{% hint style="info" %}
+twofi is now available in the Kali Linux default repository. So, you can install the tool with a simple `apt install`
+{% endhint %}
+
 
 
 ## Using twofi
