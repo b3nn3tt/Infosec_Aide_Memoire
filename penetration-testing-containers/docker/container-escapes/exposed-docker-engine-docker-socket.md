@@ -10,7 +10,7 @@ Should you land a shell insider a containerised application, either by the Docke
 find / -name docker.sock 2>/dev/null
 ```
 
-![](../../../.gitbook/assets/image%20%28130%29.png)
+![](../../../.gitbook/assets/image%20%28135%29.png)
 
 {% hint style="info" %}
  docker.sock is often found in `/run/docker.sock`, though it can occasionally pop up in other places
@@ -34,7 +34,7 @@ docker run -it -v /:/host/ ubuntu:18.04 chroot /host/ bash
 ```
 {% endcode %}
 
-![root privileges secured on the docker host](../../../.gitbook/assets/image%20%28119%29.png)
+![root privileges secured on the docker host](../../../.gitbook/assets/image%20%28124%29.png)
 
 
 

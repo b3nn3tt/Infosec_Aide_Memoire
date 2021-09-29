@@ -40,5 +40,5 @@ Next, we set `name2` to `Lucas`, and since we did not use the local keyword, we 
 
 So, let's see the script run and the end result:
 
-![Local and Global variable scopes](../../../.gitbook/assets/image%20%2878%29.png)
+![Local and Global variable scopes](../../../.gitbook/assets/image%20%2881%29.png)
 

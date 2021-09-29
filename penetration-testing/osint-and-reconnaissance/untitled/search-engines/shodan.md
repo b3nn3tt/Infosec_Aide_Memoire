@@ -10,15 +10,15 @@ Shodan blurs the lines with passive and active reconnaissance. From our perspect
 
 Let’s start by using Shodan to search for **hostname:megacorpone.com**:
 
-![](../../../../.gitbook/assets/image%20%28128%29.png)
+![](../../../../.gitbook/assets/image%20%28133%29.png)
 
 In this case, Shodan lists the IPs, services, and banner information. All of this is gathered without interacting with the client’s web site. This information gives us a snapshot of our target’s Internet footprint. For example, there are eight servers running SSH, and we can drill down on this to refine our results by clicking on SSH under Top Services:
 
-![](../../../../.gitbook/assets/image%20%28102%29.png)
+![](../../../../.gitbook/assets/image%20%28107%29.png)
 
 Based on Shodan’s results, we know exactly which version of OpenSSH is running on each server. If we click on an IP address, we can retrieve a summary of the host:
 
-![](../../../../.gitbook/assets/image%20%28115%29.png)
+![](../../../../.gitbook/assets/image%20%28120%29.png)
 
 We can view the ports, services, and technologies used by the server on this page. Shodan will also reveal if there are any published vulnerabilities for any of the identified services or technologies. This information is invaluable when determining where to start when we move to active testing.
 

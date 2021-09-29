@@ -8,7 +8,7 @@ However
 
 When it comes to scripts, functions are basically Inception; _a script within a script..._
 
-![Hello Mr Charles...](../../../.gitbook/assets/image%20%2886%29.png)
+![Hello Mr Charles...](../../../.gitbook/assets/image%20%2890%29.png)
 
 Functions are useful when we need to execute the same code multiple times. Rather than re-writing the same chunk of code over and over, we just write it once as a function and then **call** that function as needed. Put another way, a function is a subroutine, or a code block that implements a set of operations – a “black box” that performs a specified task.
 
@@ -50,7 +50,7 @@ print_me
 ```
 {% endcode %}
 
-![Example of a function call in a bash script](../../../.gitbook/assets/image%20%2897%29.png)
+![Example of a function call in a bash script](../../../.gitbook/assets/image%20%28102%29.png)
 
 {% hint style="info" %}
 Note that when a functioned is created, it will not execute unless it is explicitly called. Some script writers place all their functions at the very top of their scripts, and they are then called much further down as the need arises; This is where functions differ from the rest of the elements you will find in a typical script, which are executed sequentially from top to bottom.
