@@ -150,7 +150,10 @@
       * [Upload a Malicious Docker Image](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/upload-a-malicious-docker-image.md)
       * [Reverse Engineering Docker Images](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/reverse-engineering-docker-images/README.md)
         * [Image Analysis with dive](penetration-testing-containers/docker/docker-registry/exploiting-a-docker-registry/reverse-engineering-docker-images/image-analysis-with-dive.md)
-  * [Docker Engine](penetration-testing-containers/docker/docker-engine.md)
+  * [Docker Engine](penetration-testing-containers/docker/docker-engine/README.md)
+    * [Discover and Enumeration an Exposed Docker Engine](penetration-testing-containers/docker/docker-engine/discover-and-enumeration-an-exposed-docker-engine.md)
+    * [Confirm the Vulnerability](penetration-testing-containers/docker/docker-engine/confirm-the-vulnerability.md)
+    * [Exploiting the Vulnerability](penetration-testing-containers/docker/docker-engine/exploiting-the-vulnerability.md)
   * [Container Escapes](penetration-testing-containers/docker/container-escapes.md)
 
 ## Penetration Testing - Web Application
