@@ -154,7 +154,10 @@
     * [Discover and Enumeration an Exposed Docker Engine](penetration-testing-containers/docker/docker-engine/discover-and-enumeration-an-exposed-docker-engine.md)
     * [Confirm the Vulnerability](penetration-testing-containers/docker/docker-engine/confirm-the-vulnerability.md)
     * [Exploiting the Vulnerability](penetration-testing-containers/docker/docker-engine/exploiting-the-vulnerability.md)
-  * [Container Escapes](penetration-testing-containers/docker/container-escapes.md)
+  * [Container Escapes](penetration-testing-containers/docker/container-escapes/README.md)
+    * [Exposed Docker Engine: Docker Socket](penetration-testing-containers/docker/container-escapes/exposed-docker-engine-docker-socket.md)
+    * [Shared Namespace](penetration-testing-containers/docker/container-escapes/shared-namespace/README.md)
+      * [Exploiting the Shared Namespace](penetration-testing-containers/docker/container-escapes/shared-namespace/exploiting-the-shared-namespace.md)
 
 ## Penetration Testing - Web Application
 
