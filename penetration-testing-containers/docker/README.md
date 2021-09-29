@@ -17,7 +17,7 @@ Containers share computing resources with, but remain isolated enough to not con
 
 Let's look at the diagram below for a better picture:
 
-![A high-level concept of Docker](../../.gitbook/assets/image%20%2895%29.png)
+![A high-level concept of Docker](../../.gitbook/assets/image%20%2896%29.png)
 
 We can see three containers running their own applications with no virtualisation. The three applications are isolated from one another, but use the main operating system's resources.
 

@@ -11,7 +11,7 @@ grep $user2 /etc/passwd && echo "$user2 found!"
 ```
 {% endcode %}
 
-![Example of BOOLEAN AND](../../../.gitbook/assets/image%20%2893%29.png)
+![Example of BOOLEAN AND](../../../.gitbook/assets/image%20%2894%29.png)
 
 So, what happened here then? A variable was declared, holding the value of a valid user name. Then, the `grep` command  was used to search the `/etc/passwd` file for an entry that matched the username; in this case, `ubuntu`. So, the `grep` command completes, and there is indeed a match, there was a matching user accounts with the name `ubuntu`, meaning that the BOOLEAN True/False test was positive.
 
@@ -19,13 +19,13 @@ In this situation, the AND result must be true for the next command to be execut
 
 If we change the value of user2 to a user not present in the system, and run the same BOOLEAN command, you will notice that the output is different:
 
-![BOOLEAN AND with a false outcome](../../../.gitbook/assets/image%20%2894%29.png)
+![BOOLEAN AND with a false outcome](../../../.gitbook/assets/image%20%2895%29.png)
 
 On this occasion, the AND condition fails as the username `doesnotexist` cannot be found in the `/etc/passwd` file, hence the second command is never executed.
 
 If we were to modify the command, replacing `AND` with `OR`, we would see our desired echo message, despite the username not appearing in the `/etc/passwd` file:
 
-![BOOLEAN OR with successful execution from a FALSE conditon](../../../.gitbook/assets/image%20%2889%29.png)
+![BOOLEAN OR with successful execution from a FALSE conditon](../../../.gitbook/assets/image%20%2890%29.png)
 
 As you have doubtlessly worked out, this is because with the `OR` statement, either condition needs to be True, not both, and because the second condition is merely an `echo` command, it was always going to be true irrespective of the initial conditional check.
 

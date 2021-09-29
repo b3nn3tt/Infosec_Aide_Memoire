@@ -26,7 +26,7 @@ We will be using the target [http://docker-rodeo.thm](http://docker-rodeo.thm) f
 
 We need to send a `GET` request to `http://docker-rodeo.thm:5000/v2/_catalog` to list all the repositories registered on the registry:
 
-![A crafted GET request to the target Docker Registry](../../../.gitbook/assets/image%20%2888%29.png)
+![A crafted GET request to the target Docker Registry](../../../.gitbook/assets/image%20%2889%29.png)
 
  As you can see, we're given a response of three repositories. For now, we are only going to focus on `cmnatic/myapp1`.
 
