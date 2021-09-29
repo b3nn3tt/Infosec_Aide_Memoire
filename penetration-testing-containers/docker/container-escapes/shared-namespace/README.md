@@ -2,7 +2,7 @@
 
 Before we go much further, let's quickly go over how Docker isolates containers from one another real quick...
 
-![High-level representation of docker container isolation](../../../../.gitbook/assets/image%20%28110%29.png)
+![High-level representation of docker container isolation](../../../../.gitbook/assets/image%20%28118%29.png)
 
 As you have no doubt discovered by now, containers have their own networking capabilities and file storage. They achieve this by using three components of the Linux kernel:
 
@@ -19,7 +19,7 @@ Leveraging namespaces is how containerisation is achieved. Processes can only "s
 
 Let's prove the concept of containerisation. We will compare the number of processes there are in a Docker container that hosts a webserver versus a host operating system at the time:
 
-![FULL HOST OS](../../../../.gitbook/assets/image%20%2885%29.png)
+![FULL HOST OS](../../../../.gitbook/assets/image%20%2887%29.png)
 
 Note some useful information highlighted in red. On the very left, we can see the system user the process is running as, then the processes number \(PID\). There are a few more columns that, for this task, aren't worth explaining. But notice in the last column, the command that is running. I've highlighted a Docker command running, and an instance of Google Chrome running. As you can see, there are LOTS of processes running...
 

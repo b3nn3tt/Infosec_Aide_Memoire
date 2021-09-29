@@ -32,7 +32,7 @@ At the moment, we have regained control of the terminal. We can therefore work o
 fg 1
 ```
 
-![The previously stopped process has been resumed](../../../../../.gitbook/assets/image%20%28100%29.png)
+![The previously stopped process has been resumed](../../../../../.gitbook/assets/image%20%28105%29.png)
 
 What if we want to perform a task that ordinarily would tie up our terminal, but also work on something else at the same time? To achieve this, we can run a task in the background. As we saw earlier, we can start a process in the background by appending an ampersand \(`&`\) to the command - that's all well and good, but what if we didn't have the foresight to start the process this way? 
 
@@ -42,11 +42,11 @@ We can background a running task, then set it to start back up again in the back
 sudo tcpdump -i eth0 -ntvxw example.pcap
 ```
 
-![Running process is stopped with SIGTSTP](../../../../../.gitbook/assets/image%20%2899%29.png)
+![Running process is stopped with SIGTSTP](../../../../../.gitbook/assets/image%20%28104%29.png)
 
 Now, we can see by running jobs that the task has been stopped:
 
-![Confirmation that the running process has stopped](../../../../../.gitbook/assets/image%20%28122%29.png)
+![Confirmation that the running process has stopped](../../../../../.gitbook/assets/image%20%28131%29.png)
 
 Now, by entering `bg 1`, we can allow the process to continue in the background:
 
@@ -54,7 +54,7 @@ Now, by entering `bg 1`, we can allow the process to continue in the background:
 bg 1
 ```
 
-![The process runs in the background, then it is foregrounded and terminated with Ctrl + c](../../../../../.gitbook/assets/image%20%2886%29.png)
+![The process runs in the background, then it is foregrounded and terminated with Ctrl + c](../../../../../.gitbook/assets/image%20%2889%29.png)
 
 {% hint style="info" %}
 As you can see in the output, the terminal gets a little messy. Often, when you background a process, some of its output will still get printed to the terminal. This can be modified with STDOUT redirection of course, but things can still end up a little untidy - I have left this output in this state to illustrate the point

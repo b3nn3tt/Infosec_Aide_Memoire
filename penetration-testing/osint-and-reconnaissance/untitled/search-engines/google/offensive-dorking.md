@@ -8,7 +8,7 @@ So, let's see an example:
 
 This search will find anything indexed by Google that contains the string `ViewerFrame?Mode=` in its URL. To be clear, this string is specific to Panasonic Webcams. So, any results you get from this search will reference publicly accessible web cams. For example, here is the rule of a simple search:
 
-![The URL has been omitted to protect the idiotic](../../../../../.gitbook/assets/image%20%2881%29.png)
+![The URL has been omitted to protect the idiotic](../../../../../.gitbook/assets/image%20%2883%29.png)
 
 Now, I am not advocating that you go ahead and start clicking on every publicly accessible camera \(remember, accessing other peoples stuff is legally sketchy in many places... you have been warned\), but it's a nice, simple example that shows just how easy it is to gain access to systems that users \(or administrators\) have unwittingly left the door open to. And all we needed was Google...
 

@@ -8,7 +8,7 @@ Docker Registries, fundamentally, are used to store and provide published Docker
 
 Take for example the RustScan DockerHub registry:
 
-![The rustscan DockerHub registry](../../../.gitbook/assets/image%20%2874%29.png)
+![The rustscan DockerHub registry](../../../.gitbook/assets/image%20%2875%29.png)
 
 The developers have created a "tag" for every version of RustScan. As this is public, anyone can switch between the version of RustScan that they want to use with ease by downloading the image for the tag they want to use. 
 

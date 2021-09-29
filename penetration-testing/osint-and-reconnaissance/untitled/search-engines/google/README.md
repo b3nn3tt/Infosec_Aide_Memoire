@@ -12,13 +12,13 @@ That all sounds exciting, doesn't it! But in plain English, what does it mean?
 
 Simply put, Google \(and many other search engines for that matter\) support the use of **search operators**, or "filters", to help to shape your search to be more efficient. Often, said operators are undocumented, and using them can trigger an error from Google, who will be suspicious of your usage:
 
-![Paranoid Google...](../../../../../.gitbook/assets/image%20%2896%29.png)
+![Paranoid Google...](../../../../../.gitbook/assets/image%20%28100%29.png)
 
 So, in practice, all you need to do is enter a search into Google as you ordinarily would, only you preface your search term with a special operator. That operator ensures that results to your query are filtered accordingly, based on whichever operator you choose to use.
 
 Let's see an example:
 
-![](../../../../../.gitbook/assets/image%20%28117%29.png)
+![](../../../../../.gitbook/assets/image%20%28125%29.png)
 
 The following operators were used:
 
@@ -27,7 +27,7 @@ The following operators were used:
 
 The result of this search will return only results were the word `liverpool` is in the title of the page, and the page is from the website is `bbc.co.uk`. Let's see the results:
 
-![Results of the Google Dork search](../../../../../.gitbook/assets/image%20%28120%29.png)
+![Results of the Google Dork search](../../../../../.gitbook/assets/image%20%28129%29.png)
 
 As you can see, we have our results as expected. 
 

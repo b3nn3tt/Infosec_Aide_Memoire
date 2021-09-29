@@ -17,13 +17,13 @@ Containers share computing resources with, but remain isolated enough to not con
 
 Let's look at the diagram below for a better picture:
 
-![A high-level concept of Docker](../../.gitbook/assets/image%20%28119%29.png)
+![A high-level concept of Docker](../../.gitbook/assets/image%20%28127%29.png)
 
 We can see three containers running their own applications with no virtualisation. The three applications are isolated from one another, but use the main operating system's resources.
 
 In comparison, running these applications in virtual machines:
 
-![A high-level concept of Virtualisation](../../.gitbook/assets/image%20%2898%29.png)
+![A high-level concept of Virtualisation](../../.gitbook/assets/image%20%28103%29.png)
 
  The "_Guest Operating System_" is where the resources are used up.
 

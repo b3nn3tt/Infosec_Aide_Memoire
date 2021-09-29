@@ -2,7 +2,7 @@
 
 During penetration testing, elsewise known as ethical hacking, you will generally adhere to a methodology that will direct your activities. Sadly, you cant just sit there, bang on the keyboard in some incoherent high speed fashion and then shout "_I'm in!!_"... sorry Hollywood. 
 
-![](../../.gitbook/assets/image%20%2889%29.png)
+![](../../.gitbook/assets/image%20%2892%29.png)
 
 Intelligence gathering, or Reconnaissance as it is called in certain circles, is usually the first step. It is the process of acquiring intelligence on a target that will aid in our attack. Generally speaking, we break down our reconnaissance into two categories:
 
