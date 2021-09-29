@@ -1,2 +1,2 @@
-# Active Information Gathering
+# Active Reconnaissance
 

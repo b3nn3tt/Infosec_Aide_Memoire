@@ -144,7 +144,7 @@
       * [linked2username](penetration-testing/osint-and-reconnaissance/untitled/social-media-tools/untitled-2.md)
       * [OneMillionTweetMap](penetration-testing/osint-and-reconnaissance/untitled/social-media-tools/untitled-3.md)
     * [Reconnaissance Frameworks](penetration-testing/osint-and-reconnaissance/untitled/reconnaissance-frameworks.md)
-  * [Active Information Gathering](penetration-testing/osint-and-reconnaissance/active-information-gathering.md)
+  * [Active Reconnaissance](penetration-testing/osint-and-reconnaissance/active-information-gathering.md)
   * [Vulnerability Scanning](penetration-testing/osint-and-reconnaissance/vulnerability-scanning.md)
 * [Exploitation](penetration-testing/exploitation-1/README.md)
   * [Client-Side Attacks](penetration-testing/exploitation-1/client-side-attacks.md)
