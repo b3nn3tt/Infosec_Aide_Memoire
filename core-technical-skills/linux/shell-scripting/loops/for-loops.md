@@ -29,7 +29,7 @@ So, let's quickly break this down:
 
 So, when we run this for loop "one-liner", we get the following outcome:
 
-![Simple for loop example](../../../../.gitbook/assets/image%20%28133%29.png)
+![Simple for loop example](../../../../.gitbook/assets/image%20%28134%29.png)
 
 {% hint style="info" %}
 I can hear you thinking "Where does this have practical application?". There are lots of useful ways to leverage a for loop, but they are very powerful when you need to perform the same action on a number of different files. 

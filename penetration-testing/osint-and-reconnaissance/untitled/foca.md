@@ -14,13 +14,13 @@ The process works as follows:
 
 Click on “New Project” on the top left hand Window. Fill in the “Domain Website” as our target, and name the project accordingly. Once all data has been entered, click "Create":
 
-![](../../../.gitbook/assets/image%20%28129%29.png)
+![](../../../.gitbook/assets/image%20%28130%29.png)
 
-![](../../../.gitbook/assets/image%20%28121%29.png)
+![](../../../.gitbook/assets/image%20%28122%29.png)
 
 Next, on the new project screen, we can select which search engines to leverage \(Google, Bing etc.\) and what extensions to look for. Select those you wish to search \(leave default for maximum capture\):
 
-![](../../../.gitbook/assets/image%20%28138%29.png)
+![](../../../.gitbook/assets/image%20%28139%29.png)
 
 Click “Search All”. The scan takes some time. Once complete, you can browse the discovered files. Right click the discovered files and select “Download All”:
 

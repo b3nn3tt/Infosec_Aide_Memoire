@@ -50,7 +50,7 @@ print_me
 ```
 {% endcode %}
 
-![Example of a function call in a bash script](../../../.gitbook/assets/image%20%28105%29.png)
+![Example of a function call in a bash script](../../../.gitbook/assets/image%20%28106%29.png)
 
 {% hint style="info" %}
 Note that when a functioned is created, it will not execute unless it is explicitly called. Some script writers place all their functions at the very top of their scripts, and they are then called much further down as the need arises; This is where functions differ from the rest of the elements you will find in a typical script, which are executed sequentially from top to bottom.

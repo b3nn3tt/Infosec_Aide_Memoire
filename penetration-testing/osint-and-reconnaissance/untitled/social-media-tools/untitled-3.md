@@ -8,11 +8,11 @@ The [OneMillionTweetMap](PENTESTING--Infrastructure_Testing--Passive_Information
 
 For example, let’s say that we are creating a PowerPoint presentation for a given topic, and we need to locate tweets based on a given query. We can perform the search and find aggregated data about \#powerpoint or just “PowerPoint":
 
-![Filtering tweets with a search term](../../../../.gitbook/assets/image%20%28116%29.png)
+![Filtering tweets with a search term](../../../../.gitbook/assets/image%20%28117%29.png)
 
 You can also change the visualization to cluster view or heatmap view. Below is an example of the heatmap visualization:
 
-![Heat map representation of tweets](../../../../.gitbook/assets/image%20%28143%29.png)
+![Heat map representation of tweets](../../../../.gitbook/assets/image%20%28144%29.png)
 
 Then you can drill down to finding an individual tweet, and get information about who wrote it, the timestamp, and the tweet content.
 

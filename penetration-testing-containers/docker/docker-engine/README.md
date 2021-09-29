@@ -10,7 +10,7 @@ It is an essential part to an operating system.
 
 Due to the fact that UNIX sockets use the filesystem directly, you can use filesystem permissions to decide who, or what, can read/write \(file system permissions in this case are akin to firewall rules at the network level\). There was an interesting benchmark test between using both types of sockets for querying a MySQL database. Notice how there are an incredibly higher amount of queries performed when using UNIX sockets:
 
-![](../../../.gitbook/assets/image%20%28118%29.png)
+![](../../../.gitbook/assets/image%20%28119%29.png)
 
 Database systems such as [Redis](https://redis.io/) are known for their performance due to this reason.
 
@@ -28,7 +28,7 @@ Users interact with Docker by using the Docker Engine. For example, commands suc
 
 In contrast, the user "**notcmnatic**" is **not** in the "**docker**" group, and therefore cannot run Docker commands due to lack of permissions to the Docker socket:
 
-![](../../../.gitbook/assets/image%20%28114%29.png)
+![](../../../.gitbook/assets/image%20%28115%29.png)
 
 ![](../../../.gitbook/assets/image%20%2880%29.png)
 

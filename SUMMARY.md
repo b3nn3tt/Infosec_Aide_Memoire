@@ -128,6 +128,7 @@
       * [Google](penetration-testing/osint-and-reconnaissance/untitled/search-engines/google/README.md)
         * [Offensive Dorking](penetration-testing/osint-and-reconnaissance/untitled/search-engines/google/offensive-dorking.md)
         * [Useful Dorks](penetration-testing/osint-and-reconnaissance/untitled/search-engines/google/useful-dorks.md)
+        * [The Google Hacking Database](penetration-testing/osint-and-reconnaissance/untitled/search-engines/google/the-google-hacking-database.md)
       * [DuckDuckGo](penetration-testing/osint-and-reconnaissance/untitled/search-engines/duckduckgo/README.md)
         * [Stealth](penetration-testing/osint-and-reconnaissance/untitled/search-engines/duckduckgo/stealth.md)
       * [Bing](penetration-testing/osint-and-reconnaissance/untitled/search-engines/bing.md)

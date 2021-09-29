@@ -8,7 +8,7 @@ Go to the search bar, and hit ! to see the various options available:
 
 So, we will perform a search and outsource it to Google:
 
-![](../../../../../.gitbook/assets/image%20%28146%29.png)
+![](../../../../../.gitbook/assets/image%20%28147%29.png)
 
 {% hint style="info" %}
 DuckDuckGo supports THOUSANDS of sites - here is a [list](https://duckduckgo.com/bang)

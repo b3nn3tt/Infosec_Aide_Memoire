@@ -2,7 +2,7 @@
 
 Before we go much further, let's quickly go over how Docker isolates containers from one another real quick...
 
-![High-level representation of docker container isolation](../../../../.gitbook/assets/image%20%28128%29.png)
+![High-level representation of docker container isolation](../../../../.gitbook/assets/image%20%28129%29.png)
 
 As you have no doubt discovered by now, containers have their own networking capabilities and file storage. They achieve this by using three components of the Linux kernel:
 
