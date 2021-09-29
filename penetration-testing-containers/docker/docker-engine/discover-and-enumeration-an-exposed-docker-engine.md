@@ -6,7 +6,7 @@ Like almost all network discovery and enumeration, we start with `nmap`. By defa
 nmap -sS -sV -p 2375 [TARGET-IP]
 ```
 
-![Discovery of an exposed docker engine running on the default port](../../../.gitbook/assets/image%20%2897%29.png)
+![Discovery of an exposed docker engine running on the default port](../../../.gitbook/assets/image%20%28103%29.png)
 
 In this case, we can see that the engine is exposed across the network!
 
