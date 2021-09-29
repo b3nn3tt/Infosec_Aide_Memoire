@@ -12,7 +12,7 @@ We can gather basic information about a domain name by executing a standard forw
 whois hbcomputersecurity.co.uk
 ```
 
-![An example of the whois command](../../../.gitbook/assets/image%20%2895%29.png)
+![An example of the whois command](../../../.gitbook/assets/image%20%2897%29.png)
 
 {% hint style="info" %}
 In this example, the domain was registered with [godaddy](https://uk.godaddy.com/), an internet registrar. They offer privacy by listing themselves as the registrar, rather than the actual owner of the domain, but if you run `whois` against any other domain, you may get different results

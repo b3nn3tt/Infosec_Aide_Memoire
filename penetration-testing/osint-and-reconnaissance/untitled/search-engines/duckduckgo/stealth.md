@@ -4,11 +4,11 @@ A **REALLY** cool operator for DuckDuckGo is the bang \(`!`\) symbol, which allo
 
 Go to the search bar, and hit ! to see the various options available:
 
-![Lot&apos;s of options to outsource your search to](../../../../../.gitbook/assets/image%20%2892%29.png)
+![Lot&apos;s of options to outsource your search to](../../../../../.gitbook/assets/image%20%2893%29.png)
 
 So, we will perform a search and outsource it to Google:
 
-![](../../../../../.gitbook/assets/image%20%28138%29.png)
+![](../../../../../.gitbook/assets/image%20%28146%29.png)
 
 {% hint style="info" %}
 DuckDuckGo supports THOUSANDS of sites - here is a [list](https://duckduckgo.com/bang)

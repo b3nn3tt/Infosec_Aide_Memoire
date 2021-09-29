@@ -10,11 +10,11 @@ So, it's always worth searching to see if your target maintains a GitHub reposit
 
 Much like online search engines, the search mechanism in GitHub also supports operators. Let's take a quick look:
 
-![Use of the operator filename:](../../../.gitbook/assets/image%20%28101%29.png)
+![Use of the operator filename:](../../../.gitbook/assets/image%20%28104%29.png)
 
 Here, we can see that the operator `filename:` was used to search for any file with the word users in the name. The results reveal a single result - `xampp.users:` 
 
-![Interesting search results](../../../.gitbook/assets/image%20%28121%29.png)
+![Interesting search results](../../../.gitbook/assets/image%20%28126%29.png)
 
 Even with a single result, we may have found something very interesting. [XAMPP](https://www.apachefriends.org/index.html) is a web application development environment. Let’s check the contents of the file:
 

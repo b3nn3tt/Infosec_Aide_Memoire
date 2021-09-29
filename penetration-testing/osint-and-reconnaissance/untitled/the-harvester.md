@@ -24,7 +24,7 @@ Let's see an example:
 theHarvester -d megacorpone.com -b google
 ```
 
-![Output from theHarvester](../../../.gitbook/assets/image%20%2898%29.png)
+![Output from theHarvester](../../../.gitbook/assets/image%20%28100%29.png)
 
 We found some email addresses, and some new subdomains of megacorpone.
 
