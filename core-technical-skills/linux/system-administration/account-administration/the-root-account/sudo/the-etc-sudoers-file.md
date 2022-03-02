@@ -2,29 +2,40 @@
 
 The easiest thing to do is to look at the `/etc/sudoers` file to see what is happening. For this example, we will look at a default installation of Ubuntu:
 
-```text
+```
 sudo nano /etc/sudoers
 ```
 
-![A default /etc/sudoers file in Ubuntu](../../../../../../.gitbook/assets/image%20%2845%29.png)
+![A default /etc/sudoers file in Ubuntu](<../../../../../../.gitbook/assets/image (45).png>)
 
 Let's take a look at the various sections in closer details...
 
 ### Default Lines
 
-* **`Defaults env_reset`** resets the terminal environment to remove any user variables. This is a safety measure used to clear potentially harmful environmental variables from the `sudo` session 
-* **`Defaults mail_badpass`** tells the system to mail notices of bad `sudo` password attempts to the configured `mailto` user. By default, this is the root account 
-* **`Defaults secure_path=`** specifies the PATH \(the places in the filesystem the operating system will look for applications\) that will be used for `sudo` operations. This prevents using user paths which may be harmful
+* **`Defaults env_reset`** resets the terminal environment to remove any user variables. This is a safety measure used to clear potentially harmful environmental variables from the `sudo` session\
+
+* **`Defaults mail_badpass`** tells the system to mail notices of bad `sudo` password attempts to the configured `mailto` user. By default, this is the root account\
+
+* **`Defaults secure_path=`** specifies the PATH (the places in the filesystem the operating system will look for applications) that will be used for `sudo` operations. This prevents using user paths which may be harmful
 
 ### USER Privilege Lines
 
 The fourth line, which dictates the root user’s `sudo` privileges, is different from the preceding lines. Let’s take a look at what the different fields mean:
 
-* **`root`** `ALL=(ALL:ALL) ALL` The first field indicates the username that the rule will apply to \(root\) 
-* `root` **`ALL`**`=(ALL:ALL) ALL` The first “ALL” indicates that this rule applies to all hosts 
-* `root ALL=(`**`ALL`**`:ALL) ALL` This “ALL” indicates that the **root** user can run commands as all users 
-* `root ALL=(ALL:`**`ALL`**`) ALL` This “ALL” indicates that the **root** user can run commands as all groups 
-* `root ALL=(ALL:ALL)` **`ALL`** The last “ALL” indicates these rules apply to all commands.
+* **`root`**` ``ALL=(ALL:ALL) ALL`\
+  The first field indicates the username that the rule will apply to (root)\
+
+* `root`` `**`ALL`**`=(ALL:ALL) ALL`\
+  The first “ALL” indicates that this rule applies to all hosts\
+
+* `root ALL=(`**`ALL`**`:ALL) ALL`\
+  This “ALL” indicates that the **root** user can run commands as all users\
+
+* `root ALL=(ALL:`**`ALL`**`) ALL`\
+  This “ALL” indicates that the **root** user can run commands as all groups\
+
+* `root ALL=(ALL:ALL)`` `**`ALL`**\
+  The last “ALL” indicates these rules apply to all commands.
 
 This means that our `root` user can run any command using `sudo`, as long as they provide their password.
 
@@ -38,7 +49,7 @@ In the screenshot, we see the `admin` group can execute any command as any user 
 
 The last line might look like a comment at first glance:
 
-![Excerpt from the /etc/sudoers file regarding includes](../../../../../../.gitbook/assets/image%20%2858%29.png)
+![Excerpt from the /etc/sudoers file regarding includes](<../../../../../../.gitbook/assets/image (58).png>)
 
 However, this line actually indicates that files within the `/etc/sudoers.d` directory will be sourced and applied as well.
 
@@ -47,4 +58,3 @@ Files within that directory follow the same rules as the `/etc/sudoers` file its
 {% endhint %}
 
 This is mainly meant for applications to alter `sudo` privileges upon installation. Putting all of the associated rules within a single file in the `/etc/sudoers.d` directory can make it easy to see which privileges are associated with which accounts, and to reverse credentials easily without having to try to manipulate the `/etc/sudoers` file directly.
-

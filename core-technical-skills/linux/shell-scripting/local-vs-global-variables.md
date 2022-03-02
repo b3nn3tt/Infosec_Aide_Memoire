@@ -35,10 +35,10 @@ Let's break this script down, and then we will take a look at it in action. Firs
 
 Next, we set `name2` to `Lucas`, and since we did not use the local keyword, we are changing the global variable, and the assignment sticks both inside and outside of the function. Based on this example, the following two points summarize variable scope:
 
-* Changing the value of a local variable with the same name as a global one will **not** affect its global value 
+* Changing the value of a local variable with the same name as a global one will **not** affect its global value\
+
 * Changing the value of a global variable inside of a function – without having declared a local variable with the same name – **will** affect its global value
 
 So, let's see the script run and the end result:
 
-![Local and Global variable scopes](../../../.gitbook/assets/image%20%2881%29.png)
-
+![Local and Global variable scopes](<../../../.gitbook/assets/image (81).png>)

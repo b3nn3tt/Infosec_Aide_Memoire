@@ -10,26 +10,26 @@ According to [McAfee](https://www.mcafee.com/blogs/enterprise/google-dorking/):
 
 That all sounds exciting, doesn't it! But in plain English, what does it mean?
 
-Simply put, Google \(and many other search engines for that matter\) support the use of **search operators**, or "filters", to help to shape your search to be more efficient. Often, said operators are undocumented, and using them can trigger an error from Google, who will be suspicious of your usage:
+Simply put, Google (and many other search engines for that matter) support the use of **search operators**, or "filters", to help to shape your search to be more efficient. Often, said operators are undocumented, and using them can trigger an error from Google, who will be suspicious of your usage:
 
-![Paranoid Google...](../../../../../.gitbook/assets/image%20%28109%29.png)
+![Paranoid Google...](<../../../../../.gitbook/assets/image (109).png>)
 
 So, in practice, all you need to do is enter a search into Google as you ordinarily would, only you preface your search term with a special operator. That operator ensures that results to your query are filtered accordingly, based on whichever operator you choose to use.
 
 Let's see an example:
 
-![](../../../../../.gitbook/assets/image%20%28137%29.png)
+![](<../../../../../.gitbook/assets/image (137).png>)
 
 The following operators were used:
 
-* `site:` bbc.co.uk 
+* `site:` bbc.co.uk\
+
 * `intitle:` liverpool
 
 The result of this search will return only results were the word `liverpool` is in the title of the page, and the page is from the website is `bbc.co.uk`. Let's see the results:
 
-![Results of the Google Dork search](../../../../../.gitbook/assets/image%20%28142%29.png)
+![Results of the Google Dork search](<../../../../../.gitbook/assets/image (142).png>)
 
-As you can see, we have our results as expected. 
+As you can see, we have our results as expected.&#x20;
 
-So, as you can see, Google Dorking is merely the act of filtering the millions upon millions of resources Google has to offer to only display things we are **REALLY** interested in. This probably sounds a little underwhelming - after all, the other name for Google Dorking is Google Hacking. But remember, hacking literally means to use something in a way other than its intended use, and as it transpires, there are lots of powerful \(and funny... and malicious...\) ways to leverage the power of Google Dorks.
-
+So, as you can see, Google Dorking is merely the act of filtering the millions upon millions of resources Google has to offer to only display things we are **REALLY** interested in. This probably sounds a little underwhelming - after all, the other name for Google Dorking is Google Hacking. But remember, hacking literally means to use something in a way other than its intended use, and as it transpires, there are lots of powerful (and funny... and malicious...) ways to leverage the power of Google Dorks.

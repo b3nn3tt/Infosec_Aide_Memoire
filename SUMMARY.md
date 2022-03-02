@@ -29,7 +29,7 @@
       * [Aliases](core-technical-skills/linux/getting-to-know-linux/using-the-shell/aliases.md)
       * [Create your Own Shell Environment](core-technical-skills/linux/getting-to-know-linux/using-the-shell/create-your-own-shell-environment/README.md)
         * [Modification Ideas](core-technical-skills/linux/getting-to-know-linux/using-the-shell/create-your-own-shell-environment/modification-ideas.md)
-    * [Navigating the Linux File System \(LFS\)](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/README.md)
+    * [Navigating the Linux File System (LFS)](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/README.md)
       * [Filesystem Commands](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/filesystem-commands.md)
       * [Listing Files and Directories](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/listing-files-and-directories.md)
       * [File Permissions and Ownership](core-technical-skills/linux/getting-to-know-linux/moving-around-the-filesystem/file-permissions-and-ownership/README.md)
@@ -104,7 +104,8 @@
     * [Functions](core-technical-skills/linux/shell-scripting/functions.md)
     * [Local Vs Global Variables](core-technical-skills/linux/shell-scripting/local-vs-global-variables.md)
   * [Securing Linux](core-technical-skills/linux/securing-linux.md)
-* [Windows](core-technical-skills/windows.md)
+* [Windows](core-technical-skills/windows/README.md)
+  * [PowerShell](core-technical-skills/windows/powershell.md)
 
 ## Development
 
@@ -115,7 +116,7 @@
   * [Front End](development/web-development/front-end.md)
   * [Back End](development/web-development/back-end.md)
 
-## Penetration Testing - Infrastructure <a id="penetration-testing"></a>
+## Penetration Testing - Infrastructure <a href="#penetration-testing" id="penetration-testing"></a>
 
 * [Pre-Engagement](penetration-testing/pre-engagement-1/README.md)
   * [Methodology](penetration-testing/pre-engagement-1/methodology.md)
@@ -186,4 +187,3 @@
 * [OSINT & Reconnaissance](penetration-testing-web-application/osint-and-reconnaissance.md)
 * [Web Server](penetration-testing-web-application/web-server.md)
 * [Web Application](penetration-testing-web-application/web-application.md)
-
