@@ -64,8 +64,6 @@
             * [The /etc/sudoers File](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/the-etc-sudoers-file.md)
             * [Granting sudo privileges](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/granting-sudo-privileges/README.md)
               * [visudo Guidance](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/granting-sudo-privileges/visudo-guidance.md)
-              * [Lock Down Rules](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/granting-sudo-privileges/lock-down-rules.md)
-              * [Create Aliases](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/granting-sudo-privileges/create-aliases.md)
             * [Useful sudo Hints](core-technical-skills/core-skills/linux/system-administration/account-administration/the-root-account/sudo/useful-sudo-hints.md)
         * [Other Administrative Accounts](core-technical-skills/core-skills/linux/system-administration/account-administration/other-administrative-accounts.md)
         * [Standard User Accounts](core-technical-skills/core-skills/linux/system-administration/account-administration/standard-user-accounts.md)

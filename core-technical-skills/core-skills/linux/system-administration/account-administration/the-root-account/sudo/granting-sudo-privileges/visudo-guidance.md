@@ -36,7 +36,7 @@ USER    ALL=(ALL) NOPASSWD: /usr/sbin/tcpdump
 
 ## Leveraging Aliases
 
-The /etc/sudoers file can be sorted out a bit better by sectioning things off with different types of "aliases". For example, we could set up three separate groups of users that might have a few members in common:
+The **`/etc/sudoers`** file can be sorted out a bit better by sectioning things off with different types of "aliases". For example, we could set up three separate groups of users that might have a few members in common:
 
 ```
 . . .
@@ -52,7 +52,7 @@ User_Alias      GROUPTHREE = doris, felicia, grant
 
 
 
-We can then allow members of `GROUPTWO` to update the apt database by creating a rule like this:
+With our alises set, we can then set about configuring **`sudo`** permissions. For example, we will allow members of **`GROUPTWO`** to update the apt database by creating a rule like this:
 
 ```
 . . .
@@ -60,11 +60,15 @@ GROUPTWO    ALL = /usr/bin/apt-get update
 . . .
 ```
 
-If we do not specify a user/group to run as, as above, `sudo` defaults to the root user.
+If we do not specify a user/group to run as, as above, **`sudo`** defaults to the **root** user.
+
+{% hint style="info" %}
+Don't worry if you dont know what `apt` is yet - we cover that later on. I'm showing it here simply to show a command that requires administrative privileges.
+{% endhint %}
 
 
 
-Next, we can allow members of `GROUPTHREE` to shutdown and reboot the machine by creating a **command alias** and using that in a rule for `GROUPTHREE`:
+Next, we can allow members of **`GROUPTHREE`** to shutdown and reboot the machine by creating a **command alias** and using that in a rule for **`GROUPTHREE`**:
 
 ```
 . . .
@@ -73,7 +77,7 @@ GROUPTHREE      ALL = power
 . . .
 ```
 
-Here, we have created a command alias called `POWER` that contains commands to power off and reboot the machine. We then allow the members of GROUPTHREE to execute these commands.
+Here, we have created a command alias called **`POWER`** that contains commands to power off and reboot the machine. We then allow the members of **GROUPTHREE** to execute these commands.
 
 
 
@@ -89,24 +93,44 @@ GROUPONE        ALL = (Web) All
 This will allow anyone who is a member of GROUPONE to execute commands as the www-data user or the apache user.
 
 {% hint style="info" %}
-Be aware that later rules will override earlier rules when there is a conflict between the two - be weary of conflicts
+Be aware that later rules will override earlier rules when there is a conflict between the two - be weary of conflicts.
 {% endhint %}
 
 
 
+## Lock Down Rules
+
+You've got several options for getting more of a handle on how **`sudo`** responds when it's summoned. The **`updatedb`** command from the **`mlocate`** package is pretty tame on a system with just one user. If you fancy letting users run it with root powers without the faff of entering a password, you could lay down a rule like this:
+
+```
+. . .
+GROUPONE      ALL = NOPASSWD: /usr/bin/updatedb
+. . .
+```
+
+As we saw earlier, `NOPASSWD` is a “tag” that means no password will be requested. It has a companion command called **`PASSWD`**, which is the default behaviour. A tag is relevant for the rest of the rule unless overruled by its “twin” tag later down the line.
+
+For instance, we can have a line like this:
+
+```
+. . .
+GROUPTWO      ALL = NOPASSWD: /usr/bin/updatedb, PASSWD: /bin/kill
+. . .
+```
+
+This would mean that any member of **`GROUPTWO`** can execute **`updatedb`** without being prompted for a password, however the use of **`kill`** would still prompt a password request.
 
 
 
+Another helpful tag is **`NOEXEC`**, which can be used to prevent some dangerous behaviour in certain programs. For example, some programs, like **`less`**, can spawn other commands by typing this from within their interface:
 
+```
+!command_to_run
+```
 
+This basically executes any command the user gives it with the same permissions that **`less`** is running under, which can be quite dangerous. To restrict this, we could use a line like this:
 
-
-
-
-
-
-
-
-
-
-
+```
+. . .
+username      ALL = NOEXEC: /usr/bin/less
+```
