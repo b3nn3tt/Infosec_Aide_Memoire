@@ -137,11 +137,32 @@ Remember, when you lock an account, it's a good policy to inform the user (if ap
 
 ### Delete a User Account
 
+From time to time, you might need to remove user accounts from your system. This could be when an employee leaves, a temporary account is no longer needed, or simply for housekeeping to keep your system clean from unused accounts. Linux provides a straightforward way to handle this via the **`userdel`** command:
 
+```
+sudo userdel -r username
+```
 
+When you run this command, the system will <mark style="color:red;">**remove the user's home directory and their mail spool, as well as the user's account data**</mark>. It’s a clean sweep, so make sure you have backups of any important data before you proceed.
 
+#### **Deleting a User Account but Keeping Its Files**
 
+There might be situations where you need to delete the user's account, but their files need to be kept intact for archival purposes, or for a handover to another team member. In this case, you omit the `-r` option:
 
+```
+sudo userdel username
+```
 
+This command will remove the user's account and mail spool from the system, but it will not touch the user's home directory or any other files owned by the user scattered around the system.
 
+{% hint style="info" %}
+**Best Practices for Account Deletion**
 
+Before deleting any accounts, it’s good practice to:
+
+1. Backup any important data from the user's home directory and mail spool
+2. Review any cron jobs or system services the user may have configured to ensure they will not be disrupted
+3. Document the deletion of the account for your records or audit purposes
+
+Deleting user accounts is a significant action and, depending on your organisation's policies, may require approval or notice before proceeding. Always follow your company's IT procedures to ensure compliance and data integrity.
+{% endhint %}
