@@ -1,22 +1,34 @@
 # Installing from Live Media
 
-Simplicity is the main advantage of installing from Live media. Essentially, you are just copying the kernel, applications, and settings from the ISO image to the hard disk. There are fewer decisions that you have to make to do this kind of installation, but you also don’t get to choose exactly which software packages to install. After the installation, you can add and remove packages as you please.
+The charm of installing from Live media lies in its simplicity. In essence, you're just transferring the kernel, apps, and configurations straight from the ISO image to the hard disk. It's a very **decision-light** procedure – fewer forks in the road to ponder over. However, this method doesn't let you handpick the specific software packages during the initial setup. Of course, you've got full freedom to tinker with packages post-installation.
 
-The first decisions that you must make about your Live media installation include where you want to install the system, and whether you want to keep existing operating systems around when your installation is done or not:
+When you're getting down to the nitty-gritty with a Live media installation, the initial choices you face are critical. You need to decide on the destination for your Linux system and whether you're going to let your new Linux setup fly solo on your hard drive, or if it’s going to share space with existing operating systems. That leads us nicely into...
 
-### **Single-Boot Computer**
 
-The easiest way to install Linux is to not have to worry about other operating systems or data on the computer, and have Linux replace everything. When you are done, the computer boots up directly to your distribution of choice.
 
-### **Multi-Boot Computer**
+## **Single-Boot Computer**
 
-If you already have Windows installed on a computer and you don’t want to erase it, you can install your distribution along with Windows on that system. Then, at boot time, you can choose which operating system to start up. To be able to install Linux on a system with another operating system installed, you must have either extra disk space available (outside the Windows partition), or be able to shrink the Windows system to gain enough free space to install Linux.&#x20;
+The most straightforward path to installing Linux is to go for a clean slate approach, letting Linux take over the entire computer. This way, you don't have to juggle with other operating systems or existing data. Once the installation wraps up, you'll switch on your computer and be greeted directly by your chosen Linux distribution, neat and tidy.
 
-Because multi-boot computers are tedious to set up, and can risk damaging your already installed system, it is recommend that you install Linux on a separate computer, even an old used one, or as a virtual machine if your host computer has sufficient resources, as opposed to multi-booting.
+###
 
-### **Bare Metal or Virtual System**
+## **Multi-Boot Computer**
 
-The resulting installation can be installed to boot up directly from the computer hardware, or from within an existing operating system on the computer. If you have a computer that is running as a virtual host, you can install Linux on that system as a virtual guest.
+Want to keep Windows but fancy a slice of Linux life on the side? You can set your system to be a multi-boot machine. This means when you power up, you'll have the choice of operating system – a bit like choosing between tea and coffee in the morning.
+
+To make room for Linux, you'll need some unallocated space on your disk – either by having a spare bit of the drive ready or by shrinking the Windows partition to free up some room.
+
+#### <mark style="color:red;">A word of caution!</mark>
+
+Multi-boot setups can be fiddly, and there's a small risk of upsetting your existing Windows installation. If you want to play it safe, consider giving Linux its own playground – an older computer will do just fine, or tuck it into a virtual machine if your main rig has got the muscle for it. That way, you get the best of both worlds without the partitioning palaver.
+
+
+
+## **Bare Metal or Virtual System**
+
+The beauty of the installation you end up with is its versatility. You can set it up to boot straight from your computer's hardware, giving Linux centre stage, or you can have it nestled snugly within an already-running operating system – a bit like having a cosy flat within a bustling city building.
+
+And if you've got a machine that's acting the part of a virtual host, you're in luck. You can welcome Linux aboard as a virtual guest without much fuss.
 
 Virtualisation host software includes the following options:
 
@@ -31,11 +43,13 @@ Virtualisation host software includes the following options:
 
 You can use your chosen distribution live ISO image from disk, or burned to a DVD or USB, to start an installation from your chosen hypervisor host.
 
-For the remainder of this section, we will use [Fedora](https://getfedora.org/) as our example distribution.
 
-{% hint style="info" %}
-_**Because the Fedora 30 installation is very similar to the Red Hat Enterprise Linux 8 installation described within this section, you can refer to this procedure if you want to go beyond the simple selections shown here (particularly in the area of storage configuration)**_
-{% endhint %}
+
+## Installation Walkthrough
+
+#### For the remainder of this section, we will use [Fedora](https://getfedora.org/) as our example distribution
+
+
 
 1. **Get Fedora**\
    Choose the Fedora Live media image that you want to use, download it to your local system, and burn it to an appropriate medium\
@@ -94,4 +108,4 @@ _**Because the Fedora 30 installation is very similar to the Red Hat Enterprise 
     To keep your system secure and up to date, one of the first tasks that you should do after installing Fedora is to get the latest versions of the software you just installed. If your computer has an Internet connection, you can simply open a Terminal as your new user and type `sudo dnf update` to download and update all of your packages from the Internet. If a new kernel is installed, you can reboot your computer to have that new kernel take effect.\
 
 
-At this point, you can begin using the desktop.
+At this point, you can begin using the desktop. Simples!

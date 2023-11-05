@@ -1,26 +1,29 @@
 # Tips for Creating Partitions
 
-Changing your disk partitions to handle multiple operating systems can be very tricky, in part because each operating system has its own ideas about how partitioning information should be handled as well as different tools for doing it. Here are some tips to help you get it right:
+Changing your disk partitions to handle multiple operating systems can be very tricky, in part because each operating system has its own ideas about how partitioning information should be handled, as well as different tools for doing it. Here are some tips to help you get it right:
 
-1. If you are creating a dual-boot system, particularly for a Windows system, try to install the Windows operating system first after partitioning your disk. Otherwise, the Windows installation may make the Linux partitions inaccessible\
+1. **Operating System Installation Order**\
+   When setting up a dual-boot environment with Windows and Linux, it's generally best to install Windows first. Windows' installation can overwrite the boot loader that recognizes Linux, making it challenging to boot into the Linux OS if it's installed first\
 
-2. The `fdisk` man page recommends that you use partitioning tools that come with an operating system to create partitions for that operating system. For example, the Windows `fdisk` knows how to create partitions that Windows will like, and the Linux `fdisk` will happily make your Linux partitions. After your hard disk is setup for dual boot, however, you should not go back to Windows-only partitioning tools. Use Linux `fdisk` or a product made for multi-boot systems, such as [Acronis Disk Director](https://www.acronis.com/en-gb/products/disk-director/?gclid=EAIaIQobChMIx8aAs-Ke8wIVhO\_tCh1nRAwBEAAYASAAEgLZifD\_BwE)\
+2. **Partitioning Tools**\
+   Use the partitioning tools native to each operating system to create its respective partitions. Windows has its own partitioning tools that understand its filesystems, and similarly, Linux distributions come with tools like **`fdisk`** or **`gparted`**. After the initial setup, avoid using Windows partitioning tools on a dual-boot system, as they may not be aware of Linux partitions and could cause data loss. Instead, use Linux **`fdisk`**, or a product made for multi-boot systems, such as [Acronis Disk Director](https://www.acronis.com/en-gb/products/disk-director/?gclid=EAIaIQobChMIx8aAs-Ke8wIVhO\_tCh1nRAwBEAAYASAAEgLZifD\_BwE)\
 
-3. A master boot record (MBR) partition table **can contain four primary partitions**, one of which can be marked to contain **184 logical drives**. On a GPT partition table, you can have a maximum of 128 primary partitions on most operating systems, including Linux. You typically won’t need nearly that many partitions. If you need more partitions, use `LVM` and create as many logical volumes as you like.
+3. **Master Boot Record (MBR) vs. GUID Partition Table (GPT)**\
+   MBR is limited to **four** primary partitions (one of which can be marked to contain **184 logical drives**), but GPT allows for many more (up to 128 on most systems). For systems requiring numerous partitions, the use of GPT is recommended. Alternatively, on MBR disks, one can use **`LVM`** and create an extended partition to house multiple logical drives
 
-If you are using Linux as a desktop system, you probably don’t need lots of different partitions. However, some very good reasons exist for having multiple partitions for Linux systems that are shared by lots of users or are public web servers or file servers.
 
-Having multiple partitions within Fedora or RHEL, for example, offers the following advantages:
+
+For desktop users, a simple partitioning scheme is often sufficient. However, for servers or systems with multiple users, there are advantages to having separate partitions for areas like **`/home`**, **`/var`**, and **`/tmp`**. This approach can enhance security, simplify backup processes, and avoid system issues due to individual partitions filling up:
 
 * **Protection from Attacks**\
-  Denial-of-service attacks sometimes take actions that try to fill up your hard disk. If public areas, such as `/var`, are on separate partitions, a successful attack can fill up a partition without shutting down the whole computer.&#x20;
+  Denial-of-service attacks sometimes take actions that try to fill up your hard disk. If public areas, such as **`/var`**, are on separate partitions, a successful attack can fill up a partition without shutting down the whole computer.&#x20;
 
 {% hint style="info" %}
-Because `/var` is the default location for web and FTP servers, and is expected to hold lots of data, entire hard disks often are assigned to the `/var` filesystem alone
+Because **`/var`** is the default location for web and FTP servers, and is expected to hold lots of data, entire hard disks often are assigned to the **`/var`** filesystem alone
 {% endhint %}
 
 * **Protection from Corrupted Filesystems**\
-  If you have only one filesystem (`/`), its corruption can cause the whole Linux system to be damaged. Corruption of a smaller partition can be easier to fix, and often allows the computer to stay in service while the correction is made
+  If you have only one filesystem (**`/`**), its corruption can cause the whole system to collapse. Corruption of a smaller partition is much easier to fix, and often allows the computer to stay in service while the correction is made.
 
 The following table lists some directories that you may want to consider making into separate filesystem partitions:
 
@@ -32,4 +35,8 @@ The following table lists some directories that you may want to consider making 
 | `/home`   | <p>Because your user account directories are located in this directory, having a separate <code>/home</code> partition can prevent a reckless user from filling up the entire hard disk. It also conveniently separates user data from your operating system for easy backups or new installs.<br><br>Often, <code>/home</code> is created as an <code>LVM</code> logical volume, so it can grow in size as user demands increase. It may also be assigned user quotas to limit disk use</p>                                                                                                                                                     |
 | `/tmp`    | Protecting `/tmp` from the rest of the hard disk by placing it on a separate partition can ensure that applications that need to write to temporary files in `/tmp` can complete their processing, even if the rest of the disk fills up                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-Although people who use Linux systems rarely see a need for lots of partitions, those who maintain and occasionally have to recover large systems are thankful when the system they need to fix has several partitions. Multiple partitions can limit the effects of deliberate damage (such as denial-of-service attacks), problems from errant users, and accidental filesystem corruption.
+
+
+## Summary
+
+If you're dealing with a big Linux system that a lot of people use, or if it's a server that's out there on the web, having several partitions can be a real lifesaver. It helps to keep the damage to a minimum if things go sideways, whether it's because someone's up to no good, you've got users who are a bit clumsy, or just a spot of bad luck with the system getting corrupted. It's like putting up good fences in a massive garden; it keeps the chaos contained if something starts to go pear-shaped in one corner.

@@ -1,9 +1,9 @@
 # Partitioning Hard Disks
 
-The hard disk(s) on your computer provide the permanent (non-volatile) storage area for your data, applications programs, and the operating system itself. Partitioning is the act of dividing a disk into logical areas that can be worked with separately. In Windows, you typically have one partition that consumes the whole hard disk. However, with Linux there are several reasons you may want to have multiple partitions:
+Partitioning a hard disk is a fundamental task when setting up any operating system, and in the Linux world, it offers several practical and performance benefits. Here are some of the reasons for creating multiple partitions on a Linux system:
 
 * **Multiple operating systems**\
-  If you install Linux on a PC that already has a Windows operating system, you may want to keep both operating systems on the computer. For all practical purposes, each operating system must exist on a completely separate partition. When your computer boots, you can choose which system to run\
+  When Linux is installed alongside an existing Windows OS, each must reside on its own partition. This separation is necessary for both operating systems to function properly, with a boot loader allowing the user to select which OS to boot\
 
 * **Multiple partitions within an operating system**\
   To protect their entire operating system from running out of disk space, people often assign separate partitions to different areas of the Linux filesystem. For example, if `/home` and `/var` were assigned to separate partitions, then a gluttonous user who fills up the `/home` partition wouldn’t prevent logging daemons from continuing to write to log files in the `/var/log` directory.\
@@ -17,9 +17,14 @@ The hard disk(s) on your computer provide the permanent (non-volatile) storage a
 When you create partitions for Linux, you usually assign the filesystem type as Linux native, using the `ext2`, `ext3`,`ext4`, or `xfs` type on most Linux systems. If the applications that you are running require particularly long filenames, large file sizes, or many inodes (each file consumes an inode), you may want to choose a different filesystem type
 {% endhint %}
 
+* **Special Mount Options**\
+  The need for specific mount options for security, performance, or functionality reasons may necessitate different partitions. For example, a partition mounted with the `noexec` option would prevent the execution of binaries, enhancing security. We will explore such options in the [Securing Linux](../../../securing-linux.md) section of this gitbook
+
 During installation, systems such as Fedora, RHEL and Ubuntu let you partition your hard disk using graphical partitioning tools.
 
-### Understand Different Partition Types
+##
+
+## Understand Different Partition Types
 
 Many Linux distributions give you the option of selecting different partition types when you partition your hard disk during installation. Partition types include the following:
 

@@ -1,35 +1,49 @@
 # Installing in the Enterprise
 
-If you are managing dozens, hundreds, perhaps even thousands of Linux systems in a large enterprise, it would be a real pain to have to go to each computer to type and click through each installation. Fortunately, with modern Linux distributions, you can automate installation in such a way that all you need to do is to turn on a computer and boot from the computer’s network interface card to get your desired Linux installation.
+If you're in charge of an armada of Linux machines in a hefty enterprise, manually trotting over to each one for setup would be nothing short of a nightmare. Thankfully, the savvy world of Linux has got you covered with automation magic. You can now set up a system where simply powering up a machine and booting from its network interface card can kickstart your bespoke Linux setup.
 
-Although up to this point we have focused on installing Linux from DVD or USB media, there are many other ways to launch a Linux installation, and many ways to complete an installation. The following descriptions step through the installation process and describe ways of changing that process along the way:
+While we've been chatting a lot about installing Linux from DVDs or USB sticks, there's a whole universe of other options to get Linux up and running. Below, we'll take a stroll through the installation journey, pointing out alternatives and twists you can apply to tailor the process:
+
+
 
 1. **Launch the installation medium**\
-   You can launch an installation from any medium that you can boot from a computer: CD, DVD, USB drive, hard disk, or network interface card with [PXE](https://en.wikipedia.org/wiki/Preboot\_Execution\_Environment) support. The computer goes through its boot order and looks at the master boot record on the physical medium, or looks for a PXE server on the network\
+   To kick things off with a Linux install, you've got a smorgasbord of bootable options: CD, DVD, USB thumb drive, hard drive, or even a network card with [PXE](https://en.wikipedia.org/wiki/Preboot\_Execution\_Environment) (Preboot eXecution Environment) up its sleeve. Your computer will inspecty its boot sequence, check out the master boot record on the chosen medium, or scout the network for a PXE server to get things moving\
 
 2. **Start the anaconda kernel**\
-   The job of the boot loader is to point to the special kernel (and possibly, an initial RAM disk) that starts the Linux installer called [Anaconda](https://docs.anaconda.com/anaconda/install/linux/). So, any of the media types just described simply needs to point to the location of the kernel and initial RAM disk to start the installation. If the software packages are not on the same medium, the installation process prompts you for where to get those packages\
+   The boot loader is your backstage pass to kickstart the whole Linux setup show. It's got one job: to spotlight the kernel and maybe an initial RAM disk that brings up the headliner, the Linux installer ([Anaconda](https://docs.anaconda.com/anaconda/install/linux/) for the RHEL crowd). All those media options we talked about before? They just need to give a nod to where the kernel and initial RAM disk are hanging out to get the ball rolling. If your package lineup isn't on the same medium, no dramas - the installer will ask where to fetch those packages from\
 
 3. **Add kickstart or other boot options**\
-   Boot options (described later in this section) can be passed to the anaconda kernel to configure how it starts up. One option supported by Fedora and RHEL allows you to pass the location of a [kickstart](https://en.wikipedia.org/wiki/Kickstart\_\(Linux\)) file to the installer. That kickstart can contain all of the information needed to complete the installation; root password, partitioning, time zone, and so on, to configure the installed system further. After the installer starts, it either prompts for needed information or uses the answers provided in the kickstart file\
+   Boot options are like secret codes that fine-tune how the Linux installer struts its stuff. Among the neat tricks Fedora and RHEL can pull off is accepting a path to a [kickstart](https://en.wikipedia.org/wiki/Kickstart\_\(Linux\)) file passed right into the installer's kernel. Think of a kickstart file as a cheat sheet loaded with all the nitty-gritty details for the setup: root password, partitioning layout, what time zone you're in, thelist goes on... Once Anaconda boots up, it'll either shoot questions at you for the missing pieces or simply take all it needs from the kickstart file and run with it, automating the whole installation process\
 
-4. **Find software packages**\
-   Software packages don’t have to be on the installation medium. This allows you to launch an installation from a boot medium that contains only a kernel and initial RAM disk. From the kickstart file, or from an option you enter manually to the installer, you can identify the location of the repository holding the RPM software packages. That location can be a local optical medium (CD, DVD), website (vita http), FTP site (via ftp), NFS share (via nfs), NFS ISO (nfsiso), or local disk (HD)\
+4.  **Find software packages**\
+    When you're getting a Linux system up and running, the installer doesn't need to have all the software packages on the same medium. It's enough to have a boot medium with just the kernel and an initial RAM disk - that's your ticket to getting the installer rolling.\
+
+
+    Now, for the main event - grabbing the software packages - long story short, you've got options. If you've planned ahead and prepped a kickstart file, that file can point the installer to where all the RPM goodies are stashed. Or, if you're going manual, you can type in the repository's address during the installation.\
+
+
+    And oh, the places you can pull these packages from! If you're old school, there's the trusty local CD or DVD. If you're connected to the network, an HTTP or FTP site can serve up your software. More of a network whiz? An NFS share or NFS ISO's have got you covered. And if it's all about that local touch, you can dip into a hard drive right in your machine. Whichever route you take, Linux is flexible enough to get what you need from where you want it.\
 
 5. **Modify installation with kickstart scripts**\
    Scripts included in a kickstart can run commands you choose before or after the installation to further configure the Linux system. Those commands can add users, change permissions, create files and directories, grab files over the network, or otherwise configure the installed system exactly as you specify.
 
+
+
 Although installing Linux in enterprise environments is beyond the scope of this gitbook, I want you to understand the technologies that are available when you want to automate the Linux installation process. Here are some of those technologies available to use with RedHat Enterprise Linux, along with links to where you can find more information about them:
 
-### Installation Server
+## Installation Server
 
 If you set up an installation server, you don’t have to carry the software packages around to each machine where you install RHEL. Essentially, you copy all of the software packages from the RHEL installation medium to a Webserver, FTP server, or NFS server, and then point to the location of that server when you boot the installer. The RHEL 8 Installation Guide describes how to set up a local or network installation source [here](https://access.redhat.com/documentation/en-us/red\_hat\_enterprise\_linux/8/html-single/performing\_a\_standard\_rhel\_installation/index#prepareinstallation-source\_preparing-for-your-installation).
 
-### PXE Server
+
+
+## PXE Server
 
 If you have a computer with a Network Interface Card (NIC) that supports PXE booting (most do these days), you can set your computer’s BIOS to boot from that NIC. If you have set up a PXE server on that network, that server can present a menu to the computer containing entries to launch an installation process. The RHEL Installation Guide provides information on how to set up PXE servers for installation [here](https://access.redhat.com/documentation/en-us/red\_hat\_enterprise\_linux/8/html-single/performing\_a\_standard\_rhel\_installation/index#booting-theinstallation-using-pxe\_booting-the-installer).
 
-### Kickstart Files
+
+
+## Kickstart Files
 
 To automate an installation completely, you create what is called a kickstart file. By passing a kickstart file as a boot option to a Linux installer, you can provide answers to all of the installation questions that you would normally have to click through.&#x20;
 
