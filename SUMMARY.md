@@ -98,6 +98,7 @@
         * [while Loops](core-technical-skills/core-skills/linux/shell-scripting/loops/while-loops.md)
       * [Functions](core-technical-skills/core-skills/linux/shell-scripting/functions.md)
       * [Local Vs Global Variables](core-technical-skills/core-skills/linux/shell-scripting/local-vs-global-variables.md)
+      * [Summary](core-technical-skills/core-skills/linux/shell-scripting/summary.md)
     * [Securing Linux](core-technical-skills/core-skills/linux/securing-linux.md)
   * [Windows](core-technical-skills/core-skills/windows/README.md)
     * [Security Hardening](core-technical-skills/core-skills/windows/security-hardening.md)

@@ -1,6 +1,6 @@
 # if, else, and elif
 
-We can write scripts that can perform certain actions depending on conditions using `if`, `else` and `elif`. The syntax for these things is quite particular so you need to be careful. At a high level, we are looking at...
+We can write scripts that can perform certain actions depending on conditions using **`if`**, **`else`** and **`elif`**. The syntax for these things is quite particular so you need to be careful. At a high level, we are looking at...
 
 {% code title="High Level Psuedo Code - if statement" %}
 ```
@@ -17,7 +17,7 @@ fi
 
 ## Simple if else Script
 
-The easiest way to show this in action is to examine a working script with an `if` statement in it:
+The easiest way to show this in action is to examine a working script with an **`if`** statement in it:
 
 ```bash
 #!/bin/bash
@@ -75,7 +75,7 @@ fi
 ```
 
 {% hint style="info" %}
-In both scripts, you are seeing operators such as `-lt` and `-gt`, which are short for **Less Than** and **Greater Than.** The table below contains a comprehensive list of operators you can use in your scripts
+In both scripts, you are seeing operators such as **`-lt`** and **`-gt`**, which are short for **Less Than** and **Greater Than.** The table below contains a comprehensive list of operators you can use in your scripts
 {% endhint %}
 
 

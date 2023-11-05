@@ -53,7 +53,7 @@ passwd --expire tempuser
 As before, we levereage useradd to create the new user, only this time we add some additional options:
 
 * **`-e`**: specifies that the account will expire, and uses the result of the following section to determine when
-* **`$(date -d "+30 days" +%F)`**: calculates the date 30 days from now and formats it in a way the **`useradd`** command understands
+* **`$(date -d "+30 days" +%F)`**: calculates the date 30 days from now and formats it in a way the **`useradd`** command understands. This is an example of [command substitution](../../../shell-scripting/variables/command-substitution.md)
 
 This time,  we don't even bother setting a temporary password - we immediately "expire" the account so on first logon, the temp user sets their own password. This is far more efficient.
 

@@ -2,12 +2,12 @@
 
 Think of a variable as a named bucket that we can place data into. We can then use these variables (or, more practically, their contents) within our code.
 
-To create, or “Declare” a variable, simply enter its name followed by an `=` with no spaces, and then the value of the variable (again with no spaces):
+To create, or **Declare** a variable, simply enter its name followed by an `=` with no spaces, and then the value of the variable (again with no spaces):
 
 {% code title="Declaring Variables" %}
 ```bash
-example_variable=Good
-example_variable2=Bad
+example_variable=Windows
+example_variable2=Sucks
 ```
 {% endcode %}
 
@@ -20,11 +20,11 @@ We can then reference variables with a $ sign:
 {% code title="Calling Variables" %}
 ```bash
 echo $example_variable $example_variable2
-Good Bad
+Windows Sucks
 ```
 {% endcode %}
 
-Now, there are a few tripping points here. Look at the following:
+Now, there are a few tripping points here. Consider the following:
 
 ```bash
 example=Hello World

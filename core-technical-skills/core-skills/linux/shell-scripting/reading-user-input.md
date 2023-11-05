@@ -1,6 +1,6 @@
 # Reading User Input
 
-Interactive user input is a vital feature if your scripts are going to provide rich functionality. To facilitate this sort of data capture, we use the `read` command:
+Interactive user input is a vital feature if your scripts are going to provide rich functionality. To facilitate this sort of data capture, we use the **`read`** command:
 
 {% code title="Leveraging the read command to capture user input" %}
 ```bash

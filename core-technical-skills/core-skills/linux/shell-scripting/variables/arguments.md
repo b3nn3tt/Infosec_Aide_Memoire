@@ -1,6 +1,6 @@
 # Arguments
 
-$USERArguments are the things we pass to a command or script upon execution:
+Arguments, as well as being things I often get into at home about the jobs I forgot to do... are the things we pass to a command or script upon execution:
 
 ```bash
 ls -l /opt
@@ -49,12 +49,3 @@ There are other special arguments we can use:
 | `$HOSTNAME` | The hostname of the machine                      |
 | `$RANDOM`   | A random number                                  |
 | `$LINENO`   | The current line number in the script            |
-
-
-
-
-
-
-
-
-
