@@ -1,10 +1,10 @@
 # Remote Desktop with vnc
 
-Virtual Network Computing, or VNC, is a connection system that allows you to use your keyboard and mouse to interact with a graphical desktop environment on a remote server. It makes managing files, software, and settings on a remote server easier for users who are not yet comfortable with the command line.
+Virtual Network Computing, or VNC, presents a platform that enables the use of a remote server's graphical desktop environment from another computer. It translates your keyboard and mouse actions to the server, simplifying the management of files, applications, and system preferences for those less acquainted with command-line operations.
 
-In this example, you’ll set up a VNC server with [TightVNC](https://www.tightvnc.com/) on an Ubuntu server and connect to it securely through an SSH tunnel. Then, you’ll use a VNC client program on your local machine to interact with your server through a graphical desktop environment.
+In this guide, we will walk through setting up a VNC server using [TightVNC](https://www.tightvnc.com/) on an Ubuntu server, demonstrating how to establish a secure connection via an SSH tunnel. On your local computer, you'll deploy a VNC client to navigate your server's graphical interface as if you were physically present.
 
-To establish remote access, you can use any of the following client applications:
+The following VNC client applications are compatible for establishing a remote connection:
 
 |                                                                            | Windows | Linux | MacOS |
 | -------------------------------------------------------------------------- | ------- | ----- | ----- |

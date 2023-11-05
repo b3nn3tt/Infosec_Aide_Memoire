@@ -80,7 +80,7 @@ sudo atomic run cockpit/ws
 
 
 
-**CentOS**
+## **CentOS**
 
 Cockpit is included in CentOS 7.x:
 

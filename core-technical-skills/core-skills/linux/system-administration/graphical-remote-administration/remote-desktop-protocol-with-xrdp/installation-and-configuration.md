@@ -2,7 +2,7 @@
 
 This example assumes you are installing on a Debian based system, such as Ubuntu.&#x20;
 
-### Install xrdp
+## Install xrdp
 
 ```
 udo apt update
@@ -10,7 +10,9 @@ sudo apt upgrade
 sudo apt install xrdp
 ```
 
-### Configure xrdp
+##
+
+## Configure xrdp
 
 ```
 sudo mkdir /etc/polkit-1/rules.d
@@ -34,7 +36,9 @@ polkit.addRule(function(action, subject) {
 });
 ```
 
-### Enable the xrdp Service
+##
+
+## Enable the xrdp Service
 
 ```
 sudo systemctl enable xrdp
@@ -43,12 +47,12 @@ sudo systemctl restart xrdp
 sudo systemctl restart xrdp-sesmanq
 ```
 
-### Restart your system
+###
+
+## Restart your system
 
 ```
 sudo shutdown -r now
 ```
 
-
-
-You can find alternative methods for this process at the `xrdp` [github page](https://github.com/neutrinolabs/xrdp).
+You can find alternative methods for this process at the [xrdp](https://www.xrdp.org/) [github page](https://github.com/neutrinolabs/xrdp).

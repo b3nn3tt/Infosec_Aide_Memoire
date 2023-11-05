@@ -1,5 +1,3 @@
 # Graphical Remote Administration
 
-Whilst it is true that in production environments, servers are usually administered over the network via a text based protocol, such as Secure Shell (SSH). However, it remains true that the easiest way to begin system administration is to use some graphical administration tools.
-
-The following sections describe some of the point-and-click types of interfaces that are available for doing system administration in Linux.
+While it's common for servers in production environments to be managed remotely using text-based protocols like Secure Shell (SSH), it's worth noting that graphical administration tools can offer a more user-friendly entry point for system administration. Next, we'll explore a selection of point-and-click interfaces available for administering Linux systems, providing an accessible alternative to command-line management.
