@@ -1,27 +1,25 @@
 # Installing Linux
 
-Before we do anything else, we need to get a working environment up and running. Therefore, we need to learn to install Linux. We will look specifically at:
+Installing Linux onto a computer is pretty straightforward these days. As long as your machine’s got the right stuff under the hood (like a decent hard disk, enough RAM, a solid CPU), and you’re cool with giving your hard drive a clean slate, you’re all set. Plus, with the wizardry of cloud computing and virtualisation, you can sidestep the whole installation song and dance. Just sprinkle some metadata on prebuilt images, and you can have a Linux system up and running - or tucked away - quicker than you can knock a brew together.
 
-* Choosing an installation method
-* Installing a single- or multi-boot system
-* Performing a Live media installation of Fedora
-* Installing Red Hat Enterprise Linux
-* Understanding cloud-based installations
-* Partitioning the disk for installation
-* Understanding the GRUB boot loader
+To kick things off, we'll ease you into the Linux installation party starting with a basic set-up on a physical machine using **Live media**. Then, as you get comfortable, we'll venture into the more intricate styles of installations. To make sure you're well-prepped, I'll guide you through three different Linux installation methods step by step:
 
-Installing Linux has become a fairly easy thing to do - if you are starting with a computer that is up to spec (hard disk, RAM, CPU, and so on) and you don’t mind totally erasing your hard drive. With cloud computing and virtualisation, installation can be even simpler. It allows you to bypass traditional installation and spin a Linux system up or down within a few minutes by adding metadata to prebuilt images.
 
-This section starts off with a simple installation on a physical computer from Live media, and progresses to more complex installation types. To ease you into the subject of installing Linux, I cover three different ways of installing Linux and step you through each process:
 
-### &#x20;Installing from Live Media
+## Installing from Live Media
 
-A Linux Live media ISO is a single, read-only image that contains everything you need to start a Linux operating system. That image can be burned to a DVD or USB drive, and then booted from. With the Live media, you can totally ignore your computer’s hard disk; in fact, you can run Live media on a system with no hard disk. After you are running the Live Linux system, some Live media ISOs allow you to launch an application that permanently installs the contents of the Live medium to your hard disk.
+A Linux Live media ISO serves as a comprehensive, read-only snapshot containing all the essentials to boot a Linux operating system. You can transfer this image onto a DVD or, more commonly these days, a USB drive, and use it to boot your computer. The beauty of Live media is that it operates independently of your computer's hard disk; you can even use it on a computer without a hard disk installed. While running the Linux system from Live media, some ISOs offer the option to initiate a permanent installation, transferring the Live system onto your hard disk for ongoing use. It's kind of like a "try before you buy" approach that I quite like!
 
-### &#x20;**Installing from Installation Media (DVD or USB)**
 
-An installation media, available with Fedora, RHEL, Ubuntu, and other Linux distributions, offers more flexible ways of installing Linux. In particular, instead of just copying the whole Live media contents to your computer, with installation media you can choose exactly which software package you want.
 
-### &#x20;**Installing in the Enterprise**
+## **Installing from Installation Media (DVD or USB)**
 
-Sitting in front of a computer and clicking through installation questions is somewhat inconvenient if you are installing a single system. But what if you need to install dozens or hundreds of Linux systems? What if you want to install those systems in particular ways that need to be repeated over multiple installations? Later in this section, we will look at efficient ways of installing multiple Linux systems using network installation features and kickstart files.
+Installation media, which you'll find accompanying distributions like Fedora, RHEL, and Ubuntu, provides a more adaptable approach to getting Linux onto your machine. Rather than just cloning the entirety of a Live media onto your system, installation media gives you the choice. It allows you to select the specific software packages you want, ensuring a tailored fit for your Linux setup.
+
+###
+
+## **Installing in the Enterprise**
+
+If you're setting up just one computer, manually ticking boxes and answering prompts during installation can be a pain in the... yeah. But, imagine the hassle if you're tasked with installing Linux on **hundreds** of machines! And, what if each one needs a bespoke setup, with the process replicated precisely each time...&#x20;
+
+Not to worry – we'll delve into the nifty world of network installation methods and kickstart files a little later, designed to take the pain out of mass Linux deployments.

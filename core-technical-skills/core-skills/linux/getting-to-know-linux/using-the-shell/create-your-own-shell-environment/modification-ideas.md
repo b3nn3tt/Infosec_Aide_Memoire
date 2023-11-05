@@ -1,22 +1,24 @@
 # Modification Ideas
 
-## Setting your Prompt
+## The Prompt
 
-Your shell prompt, which is a series of characters displayed each time the shell awaits a command, is governed by the PS1 environment variable. While PS1 is the main prompt you'll engage with, the shell turns to PS2, PS3, and PS4 when it seeks further input. Upon installing Linux, the prompt usually displays more than a mere dollar or pound sign.
+That little nudge your shell gives you, waiting for your next command - that's the **prompt**, and it's all down to an environment variable named **PS1**. While PS1 is the main prompt you'll engage with, it will  hand over to it's mates PS2, PS3, and PS4 for any extra bits and bobs the shell needs from you when things get a bit more complicated.
 
-In distributions like [Fedora](https://fedoraproject.org/) or [Red Hat Enterprise Linux](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux), the prompt typically includes:
+Now, when you first get started with Linux, your prompt is more than just a simple dollar or pound sign - it's got a bit more character. If you're working within the likes of Fedora or Red Hat Enterprise Linux, your prompt usually flashes your username, the name of your machine (or **hostname**), and the base name of the directory you're working in. It's like having the satnav display your exact location in the filesystem – pretty handy for knowing where you are and who you are at a glance.
 
-* Username
-* Hostname
-* Base-name of the working directory
-
-This information is commonly bracketed and capped with a dollar sign for a standard user, or a hash for root (superuser). An example of such a prompt would be:
+This information is commonly bracketed and capped with a **dollar sign** for a standard user, or a **hash** for root (superuser). An example of such a prompt would be:
 
 ![Example of a regular terminal prompt](<../../../../../../.gitbook/assets/image (124).png>)
 
-When you navigate to a different directory, the base-name in your prompt updates to reflect that new location. Similarly, if you sign in as another user or onto a different server, the displayed information adjusts accordingly.
+When you navigate to a different directory, the base-name in your prompt updates to reflect your new location. Likewise, if you sign in as another user, or remote onto a different server, the displayed information adjusts accordingly.
 
-To personalise your prompt further, you can employ various special characters. By prefixing certain letters with a backslash, you can display details like your Terminal number, the current date, or the time, among other things. For a detailed list of these characters and their functions, you can consult the bash man page.
+
+
+## Sprucing Up your Prompt
+
+Now, if you're itching to give your prompt a bit more pizzazz, you've got a whole box of special characters to play with. Slap a backslash in front of certain letters, and you can have your prompt flashing things like your terminal number, today's date, or the current time! This might sound like small potatoes, but it can be really useful.
+
+Fancy diving into the deep end? The man page for bash is a treasure trove – it's got the full lowdown on these special characters and how to make them strut their stuff in your prompt.
 
 {% hint style="info" %}
 When adjusting your prompt for a brief period directly within the shell, remember to enclose the PS1 value in quotes. For instance, entering:\
