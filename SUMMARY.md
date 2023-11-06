@@ -86,6 +86,8 @@
           * [Using Foreground and Background Commands](core-technical-skills/core-skills/linux/system-administration/managing-running-processes/backgrounding-and-foregrounding/using-foreground-and-background-commands.md)
         * [Killing and Recining Processes](core-technical-skills/core-skills/linux/system-administration/managing-running-processes/killing-and-recining-processes/README.md)
           * [kill and killall](core-technical-skills/core-skills/linux/system-administration/managing-running-processes/killing-and-recining-processes/kill-and-killall.md)
+      * [Managing Software](core-technical-skills/core-skills/linux/system-administration/managing-software/README.md)
+        * [Managing Software from the Desktop](core-technical-skills/core-skills/linux/system-administration/managing-software/managing-software-from-the-desktop.md)
     * [Shell Scripting](core-technical-skills/core-skills/linux/shell-scripting/README.md)
       * [Variables](core-technical-skills/core-skills/linux/shell-scripting/variables/README.md)
         * [Command Substitution](core-technical-skills/core-skills/linux/shell-scripting/variables/command-substitution.md)
