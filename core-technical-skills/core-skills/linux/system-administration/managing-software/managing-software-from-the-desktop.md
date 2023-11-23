@@ -19,7 +19,7 @@ Key features of the Ubuntu Software Center include:
 
 
 
-<figure><img src="../../../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Ubuntu's software center</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Ubuntu's software center</p></figcaption></figure>
 
 If you're using Linux just for everyday stuff like writing up some documents, playing music, and the usual desktop bits and bobs, the Software Center should do you just fine. Straight out of the box, your system's hooked up to Ubuntu's main software shop, with hundreds of apps for you to choose from. Plus, you've got the choice to snag third-party apps that are freebies for your use, though you can't pass them on.
 

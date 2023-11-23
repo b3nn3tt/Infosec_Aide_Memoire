@@ -86,4 +86,4 @@ The previous command sorts from **lowest memory use to highest**. If I wanted to
 ps -eo pid,user,group,gid,vsz,rss,comm --sort=-vsz
 ```
 
-![Specified desired output, sorted by VSZ to determine most memory hungry process (Highest first)](<../../../../../../.gitbook/assets/image (3).png>)
+![Specified desired output, sorted by VSZ to determine most memory hungry process (Highest first)](<../../../../../../.gitbook/assets/image (3) (1).png>)

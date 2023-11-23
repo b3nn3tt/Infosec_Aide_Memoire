@@ -31,6 +31,6 @@ Aside from the obvious difference that this is no longer a "one-liner", we can s
 
 At the latter stages of the script, we see `counter++` - this simply means take the current value or `counter`, and add it to itself, which in our case means add 1, as per the original declaration. So, with each loop, counter goes up in value by 1, until it reaches 10 and the loop ends:
 
-![Example of a while loop](<../../../../../.gitbook/assets/image (4).png>)
+![Example of a while loop](<../../../../../.gitbook/assets/image (4) (1).png>)
 
 As you can see, although there is a clear difference in the logic being used, the outcome remains the same.

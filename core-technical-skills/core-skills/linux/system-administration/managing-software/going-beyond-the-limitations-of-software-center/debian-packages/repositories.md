@@ -10,7 +10,7 @@ You've got the reins when it comes to deciding which repositories **`apt`** comm
 cat /etc/apt/sources.list
 ```
 
-<figure><img src="../../../../../../../../.gitbook/assets/image (232).png" alt=""><figcaption><p>Contents of /etc/apt/sources.list</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (232).png" alt=""><figcaption><p>Contents of /etc/apt/sources.list</p></figcaption></figure>
 
 {% hint style="info" %}
 If you're up for it, third parties have the option to add their repository details as files in the **`/etc/apt/sources.list.d`** directory
@@ -44,13 +44,13 @@ There are also community forums. Linux user forums and communities often discuss
 
 Generally though, you will usually find PPA's as the need arises.&#x20;
 
-Let's say you want to install an application; you go onto [**Software Centre**](../../) or search with **`apt`** and find nothing. So, you get your best google-fu on and you find a website for the software you want to install - in this case, let's say it's **skype**:
+Let's say you want to install an application; you go onto [**Software Centre**](../../managing-software-from-the-desktop.md) or search with **`apt`** and find nothing. So, you get your best google-fu on and you find a website for the software you want to install - in this case, let's say it's **skype**:
 
-<figure><img src="../../../../../../../../.gitbook/assets/Screenshot 2023-11-23 at 16.57.14.png" alt=""><figcaption><p>Search Result for "skype ppa"</p></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/Screenshot 2023-11-23 at 16.57.14.png" alt=""><figcaption><p>Search Result for "skype ppa"</p></figcaption></figure>
 
 As you can see, we get some results. Clicking on the top one, we are taken to a site that provides the details for a PPA, which, when added using the provided commands, allows us to install **skype** using **`apt`**:
 
-<figure><img src="../../../../../../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
 To add a repository, we can use **`apt`**. Let's w**alk through the process step-by-step:**
 
