@@ -24,13 +24,15 @@ As we just saw, Software Center is a pretty convenient way to install software. 
 
 In the early days of Linux, adding software typically meant grabbing the source code from the developers (there was no github back then either...), compiling it into executable binaries, and then installing it on your system. Occasionally, if you were lucky, you might find the software pre-compiled to run on your machine.
 
-
-
+\
 Software often came in the form of a **tarball** – a bundled file collection not _too dissimilar_ to a zip file, including executables, documentation, config files, and libraries, designed for easy storage or distribution. Installing from a tarball would scatter files across various directories on your Linux system such as **`/usr/share/man`**, **`/etc`**, **`/bin`**, and **`/lib`**.&#x20;
 
-
-
+\
 Despite tarballs making it straightforward to bundle and deploy software, this installation approach presented challenges., such as ensuring all dependencies were satisfied, updating the software at a later time, or even accounting for what software was currently installed on the system without trawling through the file system manually identifying what was present - in short, **a pain in the a$#e!**\
 \
-To overcome said limitations, a more comprehensive packaging system was devised. With only a handful of exceptions (as always with Linux...), the majority of distros support one of two packaging formats: **DEB** (for Debian, Ubuntu, Mint, etc...) and **RPM** (RHEL, Fedora, Suse, etc...)
+To overcome said limitations, a more comprehensive packaging system was devised. With only a handful of exceptions (as always with Linux...), the majority of distros support one of two packaging formats: **DEB** (for Debian, Ubuntu, Mint, etc...) and **RPM** (RHEL, Fedora, Suse, etc...). Think of these packages as "all in one" solutions for easily installing new software.
+
+\
+For the remainder of this aide memoire, ill stick mostly to the .deb packages as I use Debian, Ubuntu, and Kali all the time so its what I know best, but in truth, working with .rpm isnt all that different (usually just syntax) so you'll still be able to apply what you see here.
 {% endhint %}
+

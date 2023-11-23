@@ -6,4 +6,4 @@ description: >-
 
 # Securing Linux
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Don't mess with Tux...</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Don't mess with Tux...</p></figcaption></figure>
